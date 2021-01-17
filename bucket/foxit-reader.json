@@ -7,7 +7,7 @@
         "url": "https://www.foxitsoftware.com/pdf-reader/eula.html"
     },
     "url": "https://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/win/10.x/10.11/en_us/FoxitReader1011_Setup_Prom_IS.exe#/dl.7z",
-    "hash": "2fa85149ee0a98b6ed7e316c7efd483fc397b653790057ab19e085356b710e65",
+    "hash": "341e29058ee6ba4e952980fe07e68a36579706f5116fda0e26736f11809a96d7",
     "extract_dir": "$PLUGINSDIR",
     "installer": {
         "script": [
