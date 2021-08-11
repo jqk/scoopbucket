@@ -9,5 +9,11 @@
 	"url": "https://dldir1.qq.com/qqfile/qq/PCTIM/TIM3.3.8/TIM3.3.8.22043.exe#/dl.7z",
     "hash": "435b11b9a7be94db7a2496039f01d79b9b9c895968e6ebc203340a3e3d2d8e5d",
     
+    "shortcuts": [
+        [
+            "Files\\Bin\\TIM.exe",
+            "TIM"
+        ]
+    ],
     "notes": "We don't persist your TIM data, they are still storaged in 'Documents\\Tencent Files'."
 }
