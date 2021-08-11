@@ -45,3 +45,11 @@ scoop uninstall {app_name}
 ```
 
 **注意**：不可以添加脚本文件扩展名`.json`。
+
+## 四、软件列表
+
+| 文件名 | 说明 |
+| :--- | :---|
+| System_Explorer_v7.1.0.5359.exe | 无法从官网下载的最新版SystemExplorer |
+| WXWorkLocal_2.5.40002.154.exe | 企业微信首发定制版，专网使用 |
+| XYLinkClient-102.29.0.32835.exe | 小鱼易连首发定制版，专网使用首发定制版，专网使用 |
