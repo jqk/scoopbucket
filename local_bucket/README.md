@@ -48,8 +48,8 @@ scoop uninstall {app_name}
 
 ## 四、软件列表
 
-| 文件名 | 说明 |
-| :--- | :---|
-| System_Explorer_v7.1.0.5359.exe | 无法从官网下载的最新版SystemExplorer |
-| WXWorkLocal_2.5.40002.154.exe | 企业微信首发定制版，专网使用 |
-| XYLinkClient-102.29.0.32835.exe | 小鱼易连首发定制版，专网使用 |
+| 文件名 | 说明 | 安装脚本 | 卸载脚本 |
+| :--- | :---| :--- | :--- |
+| System_Explorer_v7.1.0.5359.exe | 无法从官网下载的最新版SystemExplorer | scoop install systemexplorer.json | scoop uninstall systemexplorer |
+| WXWorkLocal_2.5.40002.154.exe | 企业微信首发定制版，专网使用 | scoop install bchdwechatwork.json | scoop uninstall bchdwechatwork |
+| XYLinkClient-102.29.0.32835.exe | 小鱼易连首发定制版，专网使用 | scoop install bchdxylink.json | scoop uninstall bchdxylink |
