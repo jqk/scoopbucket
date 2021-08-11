@@ -13,7 +13,7 @@
             "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
         ]
     },
-    "bin": "FoxitPDFReader.exe",
+    "bin": [["FoxitPDFReader.exe", "foxitreader"]],
     "shortcuts": [
         [
             "FoxitPDFReader.exe",
