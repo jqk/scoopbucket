@@ -8,6 +8,7 @@
     },
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
     "hash": "67caa25c8b3daac6264d03751f9ee2fdf4ebd08eab95f9ffc0e3f2fe3cb28420",
+    "bin": "wechat.exe",
     "shortcuts": [
         [
             "wechat.exe",
