@@ -1,14 +1,14 @@
-# Scoop安装本地程序说明
+# Scoop安装本地应用程序说明
 
 ## 一、原因
 
-由于有些程序不易下载等原因，无法使用 `scoop`的在线安装功能，因此建立本地安装脚本，直接安装在本地磁盘准备好的应用程序安装包。
+由于有些程序不易下载等原因，无法使用 `scoop`进行在线安装。因此建立本地安装脚本，直接安装在本地磁盘准备好的应用程序安装包。
 
 ## 二、安装程序位置
 
-各个应用程序的安装文件已经在安装脚本文件中指定为 `\Scoop\local_installers`。
+安装脚本统一以 `lc_`为前缀，后面是软件名称。
 
-该路径默认执行 `scoop`时的位置与安装文件在相同磁盘分区。
+各个应用程序的安装文件已经在安装脚本中指定为 `\Scoop\local_installers`。该路径默认执行 `scoop`时的位置与安装文件在相同磁盘分区。
 
 如果安装文件不在该路径，有两个解决方案：
 
@@ -55,19 +55,19 @@ scoop uninstall {app_name}
 
 ```bash
 # 安装
-scoop install systemexplorer.json
+scoop install lc_systemexplorer.json
 
 # 卸载
-scoop uninstall systemexplorer
+scoop uninstall lc_systemexplorer
 
 # 更新
-scoop update systemexplorer.json
+scoop update lc_systemexplorer.json
 ```
 
-## 四、软件列表
+## 四、本地应用软件列表
 
-|             文件名             |             说明             |    app_name    |
-| :-----------------------------: | :--------------------------: | :------------: |
-| System_Explorer_v7.1.0.5359.exe |      官网最新版为7.0.0      | systemexplorer |
-|  WXWorkLocal_2.5.40002.154.exe  | 企业微信首发定制版，专网使用 | bchdwechatwork |
-| XYLinkClient-102.29.0.32835.exe | 小鱼易连首发定制版，专网使用 |   bchdxylink   |
+| 文件名                          | 说明                         | app_name          |
+| :------------------------------ | :--------------------------- | :---------------- |
+| System_Explorer_v7.1.0.5359.exe | 官网最新版为7.0.0            | lc_systemexplorer |
+| WXWorkLocal_2.5.40002.154.exe   | 企业微信首发定制版，专网使用 | lc_bchdwechatwork |
+| XYLinkClient-102.29.0.32835.exe | 小鱼易连首发定制版，专网使用 | lc_bchdxylink     |

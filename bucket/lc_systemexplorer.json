@@ -13,5 +13,5 @@
             "System Explorer"
         ]
     ],
-    "notes": "The newest version is 7.1.0.5359 but we can only download 7.0.0 from the official site.\nSo we put the installer in local path.\nThe URL defined in bucket file must be absolute except the drive letter and include installer file name.\nThe default path is '\\Scoop\\local_installer', assume running scoop in the same drive.\nEnsure it is correct before calling scoop.\n\nUsage: scoop install {path_to_bucket\\}systemexplorer.json"
+    "notes": "The newest version is 7.1.0.5359 but we can only download 7.0.0 from the official site.\nSo we put the installer in local path.\nThe URL defined in bucket file must be absolute except the drive letter and include installer file name.\nThe default path is '\\Scoop\\local_installer', assume running scoop in the same drive.\nEnsure it is correct before calling scoop.\n\nUsage: scoop install {path_to_bucket\\}lc_systemexplorer.json"
 }

@@ -16,5 +16,5 @@
             "XYLink for BCHD"
         ]
     ],
-    "notes": "The XYLink for BCHD is not easy to download.\nSo we put the installer in local path.\nThe URL defined in bucket file must be absolute except the drive letter and include installer file name.\nThe default path is '\\Scoop\\local_installer', assume running scoop in the same drive.\nEnsure it is correct before calling scoop.\n\nUsage: scoop install {path_to_bucket\\}bchdxylink.json\n\nUse your worker ID and password to login. The server is ysp.bchd.com.cn:7443."
+    "notes": "The XYLink for BCHD is not easy to download.\nSo we put the installer in local path.\nThe URL defined in bucket file must be absolute except the drive letter and include installer file name.\nThe default path is '\\Scoop\\local_installer', assume running scoop in the same drive.\nEnsure it is correct before calling scoop.\n\nUsage: scoop install {path_to_bucket\\}lc_bchdxylink.json\n\nUse your worker ID and password to login. The server is ysp.bchd.com.cn:7443."
 }
