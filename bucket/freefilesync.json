@@ -1,0 +1,20 @@
+{
+    "homepage": "https://freefilesync.org/",
+    "description": "A folder comparison and synchronization software.",
+    "version": "11.13",
+    "license": "freeware",
+    "url": "https://freefilesync.org/download/FreeFileSync_11.13_Windows_Setup.exe#/setup.exe",
+    "hash": "fa3f437c1b5966b28b362e9c35913561696f5c1f201bb402ac92b71f69a28ceb",
+    "innosetup" : true,
+    "bin": "freefilesync.exe",
+    "shortcuts": [
+        [
+            "freefilesync.exe",
+            "Free File Sync"
+        ]
+    ],
+    "post_install": [
+        "Copy-Item \"$scoopdir\\local_installers\\FreeFileSync\\Install.dat\" -Destination \"$dir\" -Force"
+    ],
+    "notes": "'Install.dat' is the only file missed during scoop installation.\nYou can get it by install FreeFileSync manually then find it in its path.\nPlease backup it."
+}
