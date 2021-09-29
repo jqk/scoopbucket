@@ -16,5 +16,9 @@
             "edrawmax.exe",
             "Edraw Max"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://www.edrawsoft.cn/download-edrawmax.php",
+        "regex": "V\\s*(\\d+\\.\\d+\\.\\d+)"
+    }
 }

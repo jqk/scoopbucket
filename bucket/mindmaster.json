@@ -17,5 +17,9 @@
             "Mind Master"
         ]
     ],
+    "checkver": {
+        "url": "https://www.edrawsoft.cn/download/mindmaster/",
+        "regex": ":\\s*(\\d+\\.\\d+\\.\\d+)"
+    },
     "notes": "English version is named 'EdrawMind' but not mindmaster."
 }
