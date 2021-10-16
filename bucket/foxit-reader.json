@@ -1,5 +1,5 @@
 {
-    "version": "11.0.1.49938",
+    "version": "11.1.0.52543",
     "description": "Super-fast, feature rich PDF reader that offers a delightful reading experience in a small footprint.",
     "homepage": "https://www.foxitsoftware.com/",
     "license": {
@@ -7,17 +7,27 @@
         "url": "https://www.foxitsoftware.com/pdf-reader/eula.html"
     },
     "url": "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&version=&package_type=&language=English&distID=#/setup.exe",
-    "hash": "5409b9966d344ea280d076c1c5feeec7e89e75249fb8f0f5b8ba31e894939b58",
+    "hash": "77283e0eeb8569b80bdd2ef2e5adee98a1f414f1ae2e19d8ef32bb159e3978c6",
     "installer": {
-        "script": [
-            "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
-        ]
+        "script": "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
     },
-    "bin": [["FoxitPDFReader.exe", "foxitreader"]],
+    "bin": [
+        [
+            "FoxitPDFReader.exe",
+            "foxitreader"
+        ]
+    ],
     "shortcuts": [
         [
             "FoxitPDFReader.exe",
             "Foxit Reader"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://chocolatey.org/packages/FoxitReader",
+        "regex": "Downloads of v\\s+([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&version=&package_type=&language=English&distID=#/setup.exe"
+    }
 }
