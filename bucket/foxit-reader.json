@@ -7,7 +7,7 @@
         "url": "https://www.foxitsoftware.com/pdf-reader/eula.html"
     },
     "url": "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&package_type=exe&language=Chinese&version=11.1.0.52543#/setup.exe",
-    "hash": "77283e0eeb8569b80bdd2ef2e5adee98a1f414f1ae2e19d8ef32bb159e3978c6",
+    "hash": "696c6d7136788b339620b59af9c431936124e451314d60532ab5c71e2a7bd490",
     "installer": {
         "script": "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
     },
