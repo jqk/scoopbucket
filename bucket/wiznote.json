@@ -23,7 +23,7 @@
         "My Knowledge"
     ],
     "checkver": {
-        "url": "https://www.wiz.cn/downloads-windows.html",
+        "url": "https://www.wiz.cn/zh-cn/downloads-windows.html",
         "re": "([\\d.]+)</p>"
     },
     "autoupdate":{

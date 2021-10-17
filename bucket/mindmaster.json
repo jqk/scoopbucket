@@ -1,15 +1,13 @@
 {
     "homepage": "https://www.edrawsoft.cn",
     "description": "A full-featured collaborative mind mapping and brainstorming software.",
-    "version": "9.0.2.140",
+    "version": "9.0.4",
     "license": "shareware",
-    "url": "https://cc-download.edrawsoft.cn/origin/mindmaster_cn_full5587.exe#/setup.exe",
-    "hash": "33bb2ebca1cd7ed0c92f58e30c748f952934369edf3fb2239094facea38e1281",
+    "url": "https://cc-download.edrawsoft.cn/origin/mindmaster_cn_full5375.exe#/setup.exe",
+    "hash": "27fe87cf02fb0da2b549609276a79cb42361029a22c0b35c727cbffae2893108",
     "bin": "mindmaster.exe",
     "installer": {
-        "script": [
-            "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
-        ]
+        "script": "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
     },
     "shortcuts": [
         [
@@ -21,5 +19,8 @@
         "url": "https://www.edrawsoft.cn/download/mindmaster/",
         "regex": ":\\s*(\\d+\\.\\d+\\.\\d+)"
     },
-    "notes": "English version is named 'EdrawMind' but not mindmaster."
+    "notes": "English version is named 'EdrawMind' but not mindmaster.",
+    "autoupdate": {
+        "url": "https://cc-download.edrawsoft.cn/origin/mindmaster_cn_full5375.exe#/setup.exe"
+    }
 }
