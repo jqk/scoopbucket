@@ -1,11 +1,9 @@
 {
     "homepage": "https://www.wiz.cn",
     "description": "a cross-platform cloud based note-taking client",
-    "version": "4.13.27",
+    "version": "4.13.32",
     "license": "freemium",
-    "url": "https://get.wiz.cn/wiznote-windows-x86-2021-06-25.exe#/wiznote.exe",
-    "hash": "5e0f5ec5cb6c626100e9ad1ace3876d4b0c56bbbf9a2d039bef8e336b0f4aac8",
-    "bin": "wiz.exe",
+    "url": "https://url.wiz.cn/u/windows#/wiznote.exe",
     "installer": {
         "script": [
             "Expand-InnoArchive -Path \"$dir\\wiznote.exe\" -Removal",
@@ -23,7 +21,7 @@
         "My Knowledge"
     ],
     "checkver": {
-        "url": "https://www.wiz.cn/zh-cn/downloads-windows.html",
+        "url": "https://www.wiz.cn/downloads-windows.html",
         "re": "([\\d.]+)</p>"
     },
     "autoupdate":{

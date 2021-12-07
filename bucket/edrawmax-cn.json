@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.edrawsoft.cn",
     "description": "All-in-one diagramming and graphics software.",
-    "version": "11.1.2",
+    "version": "11.5.0",
     "license": "shareware",
     "url": "https://cc-download.edrawsoft.cn/origin/edraw-max_cn_full5374.exe#/setup.exe",
-    "hash": "3efd4c7a8dc57fcc4cc8b1a57389cf2e1c89243681b05e6a5e8b33790f7d1b4b",
+    "hash": "10a164eb85d42bc8bb1ba762aa26cc649ac1de55a424152bf0715c95732185cc",
     "bin": "edrawmax.exe",
     "installer": {
         "script": "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
@@ -17,9 +17,11 @@
     ],
     "checkver": {
         "url": "https://www.edrawsoft.cn/download-edrawmax.php",
-        "regex": "V\\s*(\\d+\\.\\d+\\.\\d+)"
+        "regex": "\\s*(\\d+\\.\\d+\\.\\d+)"
     },
+    "notes": "The number in the filename is always 5374. So re-download the file if fail to verify the hash.",
     "autoupdate": {
-        "url": "https://cc-download.edrawsoft.cn/origin/edraw-max_cn_full5374.exe#/setup.exe"
+        "url": "https://cc-download.edrawsoft.cn/origin/edraw-max_cn_full5374.exe#/setup.exe",
+        "replace": "${1}"
     }
 }
