@@ -4,6 +4,7 @@
     "license": "freeware",
     "url": "http://updater.thebrain.com/files/TheBrain%2012.0.65.0%20Installer.exe",
     "hash": "8a456551807e2ac66d9487ddc813b7add35f32597b6828c4dd4137de0dce1589",
+    "description": "idea control system",
     "installer": {
         "script": [
             "Expand-DarkArchive \"$dir\\$fname\" \"$dir\" -Removal",
