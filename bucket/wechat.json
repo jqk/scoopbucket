@@ -1,13 +1,13 @@
 {
     "homepage": "https://pc.weixin.qq.com/",
     "description": "Free messaging and calling app.",
-    "version": "3.4.5",
+    "version": "3.5.0",
     "license": {
         "identifier": "EULA",
         "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
     },
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
-    "hash": "006206b1714a5d32432d346d676ac007961dfa138047de4491e039c20084328c",
+    "hash": "ff5d3042c4233840e8702721e25d7272c7dd4c55f38d0472d809fe4e0ebd992a",
     "bin": "wechat.exe",
     "shortcuts": [
         [
@@ -24,5 +24,5 @@
     "autoupdate": {
         "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z"
     },
-    "notes": "We don't persist your WeChat data, they are still storaged in 'Documents\\WeChat Files'."
+    "notes": "We don't persist your WeChat data, they are still stored in 'Documents\\WeChat Files'."
 }

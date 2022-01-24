@@ -1,0 +1,28 @@
+{
+    "version": "5.181.0.210",
+    "description": "Powerful and all-in-one utility for cleaning your PC.",
+    "homepage": "https://www.glarysoft.com/glary-utilities/",
+    "license": "Freeware|Proprietary",
+    "url": "https://download.glarysoft.com/guportable.zip",
+    "hash": "be27b4366faf387c8ec079cc508c4ec117b99df42510e66a256cdf6d87dfdc6f",
+    "bin": [
+        [
+            "Integrator_Portable.exe",
+            "Glary Utilities 5"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Integrator_Portable.exe",
+            "Glary Utilities 5"
+        ]
+    ],
+    "persist": "data",
+    "checkver": {
+        "url": "http://www.glarysoft.com/update/update.php?s=glary_utilities&c=10000&ft=std",
+        "regex": "Version=([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://download.glarysoft.com/guportable.zip"
+    }
+}
