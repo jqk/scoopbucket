@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.thebrain.com/",
-    "version": "12.0.80.0",
+    "version": "12.0.86",
     "license": "freeware",
-    "url": "http://updater.thebrain.com/files/TheBrain%2012.0.80.0%20Installer.exe",
-    "hash": "5def1f66354be310978f349be7ca0ce2954cc8e54b9564583782a574339d759f",
+    "url": "http://updater.thebrain.com/files/TheBrain%2012.0.86.0%20Installer.exe",
+    "hash": "e10d151f310cd4f92a7b1cb21f9146ec603d5513baf7fdbd0feecfcb3c4a66fb",
     "description": "power of digital thought",
     "installer": {
         "script": [
@@ -24,9 +24,10 @@
     ],
     "checkver": {
         "url": "http://www.thebrain.com.cn/index/products",
-        "regex": "\\s*(\\d+\\.\\d+\\.\\d+.\\d+)"
+        "regex": "V(\\d+\\.\\d+\\.\\d+)"
     },
     "autoupdate": {
-        "url": "http://updater.thebrain.com/files/TheBrain%20$version%20Installer.exe"
-    }
+        "url": "http://updater.thebrain.com/files/TheBrain%20$version.0%20Installer.exe"
+    },
+    "notes": "The version info is in https://assets.thebrain.com/documents/TheBrain-12-0-Release-Notes.pdf"
 }
