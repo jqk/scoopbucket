@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.vmware.com/products/workstation-pro.html",
-    "version": "16.2.2.19200509",
+    "version": "16.2.3.19376536",
     "description": "VMWare. Industry standard for running multiple operating systems as virtual machines (VMs) on a single PC.",
     "license": {
         "identifier": "Proprietary",
@@ -13,8 +13,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://download3.vmware.com/software/wkst/file/VMware-workstation-full-16.2.2-19200509.exe#/cosi.exe",
-            "hash": "1d490ee32539c2eb8d5d1b726d8f64195cd30d6fc23cf0d5e7eaef50e156ca98",
+            "url": "https://download3.vmware.com/software/WKST-1623-WIN-New/VMware-workstation-full-16.2.3-19376536.exe#/cosi.exe",
+            "hash": "117ad0b17335032d1b03ba44b03da2128d29c65925ea79efd2e03786b0129e94",
             "installer": {
                 "args": [
                     "/s",
@@ -63,7 +63,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download3.vmware.com/software/wkst/file/VMware-workstation-full-$majorVersion.$minorVersion.$patchVersion-$buildVersion.exe#/cosi.exe",
+                "url": "https://download3.vmware.com/software/WKST-$majorVersion$minorVersion$patchVersion-WIN-New/VMware-workstation-full-$majorVersion.$minorVersion.$patchVersion-$buildVersion.exe#/cosi.exe",
                 "hash": {
                     "url": "https://my.vmware.com/web/vmware/details?downloadGroup=WKST-$majorVersion$minorVersion$patchVersion-WIN&productId=686",
                     "regex": "(?sm)$basename.*?SHA256SUM</span>:\\s+$sha256"
