@@ -1,14 +1,14 @@
 {
-    "version": "2.18.3.403",
+    "version": "3.5.6.416",
     "description": "Video conferencing app by Tencent",
     "homepage": "https://meeting.tencent.com/",
     "license": {
         "identifier": "EULA",
         "url": "https://meeting.tencent.com/declare.html"
     },
-    "notes": "We don't persist your Tencent Meeting data, they are still storaged in \"$env:APPDATA\\Tencent\\WeMeet\".\nDownload url is \"https://meeting.tencent.com/download-win.html?type=1&from=1000&fromSource=1\".\nThen check md5 and update url in the .json file.",
-    "url": "https://updatecdn.meeting.qq.com/978227b441c71e16afc5814818f0ce72/TencentMeeting_0300000000_2.18.3.403.publish.exe#/dl.7z",
-    "hash": "md5:978227b441c71e16afc5814818f0ce72",
+    "notes": "We don't persist your Tencent Meeting data, they are still storaged in \"$env:APPDATA\\Tencent\\WeMeet\".",
+    "url": "https://updatecdn.meeting.qq.com/cos/8d470eda782890abc7cc8cc3c2629cb3/TencentMeeting_0300000000_3.5.6.416.publish.exe#/dl.7z",
+    "hash": "md5:8d470eda782890abc7cc8cc3c2629cb3",
     "installer": {
         "script": [
             "Remove-Item \"$dir\\wemeetapp_new.exe\" -Force",
@@ -20,7 +20,7 @@
     "shortcuts": [
         [
             "wemeetapp.exe",
-            "Tencent Meeting"
+            "腾讯会议"
         ]
     ]
 }
