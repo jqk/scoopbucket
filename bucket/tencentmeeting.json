@@ -8,13 +8,21 @@
     },
     "notes": "We don't persist your Tencent Meeting data, they are still storaged in \"$env:APPDATA\\Tencent\\WeMeet\".",
     "url": "https://updatecdn.meeting.qq.com/cos/8d470eda782890abc7cc8cc3c2629cb3/TencentMeeting_0300000000_3.5.6.416.publish.exe#/dl.7z",
-    "hash": "md5:8d470eda782890abc7cc8cc3c2629cb3",
+    "hash": "dacd74f99d97c1776b28a971b63818c0afe51146824c242bb826987526222d4e",
     "installer": {
         "script": [
             "Remove-Item \"$dir\\wemeetapp_new.exe\" -Force",
             "Rename-Item \"$dir\\`$_9_\" \"$dir\\$version\"",
             "Remove-Item \"$dir\\`$TEMP\",\"$dir\\`$WINDIR\",\"$dir\\`$PLUGINSDIR\" -Force -Recurse"
         ]
+    },
+    "checkver": {
+        "url": "https://meeting.tencent.com/wemeet-webapi/v2/config/query-download-info",
+        "script": "(Invoke-WebRequest -Body '[{\"instance\":\"windows\",\"type\":\"0300000000\"}]' -Method 'POST' -Uri $url).Content",
+        "regex": "https://(?<url>.*?\\.exe).*?version\".*?\"([\\d.]+)\""
+    },
+    "autoupdate": {
+        "url": "https://$matchUrl#/dl.7z"
     },
     "bin": "wemeetapp.exe",
     "shortcuts": [
