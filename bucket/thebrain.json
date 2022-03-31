@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.thebrain.com/",
-    "version": "12.0.86",
+    "version": "12.0.88",
     "license": "freeware",
-    "url": "http://updater.thebrain.com/files/TheBrain%2012.0.86.0%20Installer.exe",
-    "hash": "e10d151f310cd4f92a7b1cb21f9146ec603d5513baf7fdbd0feecfcb3c4a66fb",
+    "url": "http://updater.thebrain.com/files/TheBrain%2012.0.88.0%20Installer.exe",
+    "hash": "b6c4a415ca6b53c8278136064ff2ae35abe5fce95a775527a24c0e540c197fbc",
     "description": "power of digital thought",
     "installer": {
         "script": [
