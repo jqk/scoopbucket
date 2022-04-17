@@ -1,10 +1,10 @@
 {
-    "version": "0.6.2",
+    "version": "0.6.4",
     "description": "Orange is a file search desktop application.",
     "homepage": "https://github.com/naaive/orange",
     "license": "GPL-3.0",
-    "url": "https://github.com/naaive/orange/releases/download/orange-v0.6.2/Orange_0.6.2_x64_en-US.msi",
-    "hash": "bd01d447b9a257f1fa376b7caa5f012a0d58c9bc1ac52a21eda43448f2d0d316",
+    "url": "https://github.com/naaive/orange/releases/download/orange-v0.6.4/Orange_0.6.4_x64_en-US.msi",
+    "hash": "81bfca1c3bb203e208df690685ec5fd46a9a978130b1d0e2c564dcd57726d053",
     "bin": "PFiles\\Orange\\Orange.exe",
     "shortcuts": [
         [
