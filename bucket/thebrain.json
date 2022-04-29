@@ -23,8 +23,8 @@
         ]
     ],
     "checkver": {
-        "url": "http://www.thebrain.com.cn/index/products",
-        "regex": "V(\\d+\\.\\d+\\.\\d+)"
+        "url": "http://www.thebrain.com.cn/index/resource",
+        "regex": "[V|v](\\d+\\.\\d+\\.\\d+)"
     },
     "autoupdate": {
         "url": "http://updater.thebrain.com/files/TheBrain%20$version.0%20Installer.exe"
