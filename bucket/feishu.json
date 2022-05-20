@@ -1,0 +1,30 @@
+{
+    "homepage": "https://www.feishu.cn/",
+    "description": "Connect with teammates anytime and anywhere",
+    "license": {
+        "identifier": "EULA",
+        "url": "https://www.feishu.cn/en/terms"
+    },
+    "version": "5.12.11",
+    "url": "https://lf-download-installer-1.getfeishu.cn/obj/ee-appcenter/146bfc/Feishu-win32_ia32-5.12.11-signed.exe#/feishu-5.12.11.7z",
+    "hash": "md5:146bfc31bbbbac7fff9997b1c873e533",
+    "extract_to": "app",
+    "shortcuts": [
+        [
+            "app/Feishu.exe",
+            "Feishu"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.feishu.cn/api/downloads",
+        "regex": "(?sm)Windows.*?https://(?<path>[\\w.-/].*?)-(?<version>[\\d+\\.]+\\d+)(?<suffix>[\\w.-].*?).exe"
+    },
+    "autoupdate": {
+        "url": "https://$matchPath-$version$matchSuffix.exe#/feishu-$version.7z",
+        "hash": {
+            "url": "https://www.feishu.cn/api/downloads",
+            "jsonpath": "$.versions.Windows.hash"
+        }
+    },
+    "notes": "Runtime data are stored in '%APPDATA%\\LarkShell', and are not persisted by Scoop."
+}
