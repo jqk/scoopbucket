@@ -1,0 +1,30 @@
+{
+    "homepage": "https://www.foxmail.com",
+    "description": "FoxMail",
+    "version": "7.2.23",
+    "license": "freeware",
+    "url": "https://www.foxmail.com/win/download#/dl.7z",
+    "hash": "88ba7dca52c4dee2b9fef74e5f6bb7a013c42f0420490a7cbca2ab26e7838387",
+    "bin": [
+        [
+            "Foxmail.exe",
+            "Foxmail"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Foxmail.exe",
+            "Foxmail"
+        ]
+    ],
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "persist": "Storage",
+    "checkver": {
+        "url": "https://www.foxmail.com/win/en/",
+        "regex": "Latest Version: Foxmail (?<version>[\\d+\\.]+\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://www.foxmail.com/win/download#/dl.7z"
+    },
+    "notes": "Foxmail like you've never seen it before."
+}
