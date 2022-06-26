@@ -1,13 +1,13 @@
 {
     "homepage": "https://pc.weixin.qq.com/",
     "description": "Free messaging and calling app.",
-    "version": "3.7.0",
+    "version": "3.7.0.30",
     "license": {
         "identifier": "EULA",
         "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
     },
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
-    "hash": "f9061a7a57d15880bb3606c14a0786418a094daaedf92d413612f11aea4b5c8e",
+    "hash": "a3f1354b25de8df8439bea44540fd41baca3a58c25dc1eafee7b41c972fffdbe",
     "bin": "wechat.exe",
     "shortcuts": [
         [
@@ -20,7 +20,11 @@
         "Remove-Item \"$dir\\`$_15_\" -Force -Recurse",
         "Remove-Item \"$dir\\`$R5\" -Force -Recurse"
     ],
-    "checkver": "<span class=\"download-version\">(\\d+\\.\\d+\\.\\d+)",
+    "##": "checkver: <span class=\"download-version\">(\\d+\\.\\d+\\.\\d+)",
+    "checkver": {
+        "url": "https://pc.qq.com/detail/8/detail_11488.html",
+        "regex": "WeChatSetup_([\\d.]+)\\.exe"
+    },
     "autoupdate": {
         "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z"
     },
