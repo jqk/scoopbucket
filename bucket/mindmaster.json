@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.edrawsoft.cn",
     "description": "A full-featured collaborative mind mapping and brainstorming software.",
-    "version": "9.1.2",
+    "version": "10.0.1",
     "license": "shareware",
     "url": "https://cc-download.edrawsoft.cn/origin/mindmaster_cn_full5375.exe#/setup.exe",
-    "hash": "7e6097f60a9f0568607d91afea1b142e65ef2975bc9b9fdcc0983bab14d79e12",
+    "hash": "277799004f3843da83e134d4f46b4ef85c7ac0ed10f8e240e1c08b3140a26d04",
     "bin": "mindmaster.exe",
     "installer": {
         "script": "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
