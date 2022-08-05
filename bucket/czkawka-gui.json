@@ -9,7 +9,8 @@
             "hash": "b97267b5faab76265a39d68c62e4a367677d488235308c2f95ea975e64109fba"
         }
     },
-    "bin": [
+    "bin": "czkawka_gui.exe",
+    "shortcuts":[
         [
             "czkawka_gui.exe",
             "czkawka_gui"
