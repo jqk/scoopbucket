@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.foxmail.com",
     "description": "FoxMail",
-    "version": "7.2.23",
+    "version": "7.2.24",
     "license": "freeware",
     "url": "https://www.foxmail.com/win/download#/dl.7z",
-    "hash": "88ba7dca52c4dee2b9fef74e5f6bb7a013c42f0420490a7cbca2ab26e7838387",
+    "hash": "a628bcdc92007a692694b2cd081ffcfdcb88e47bad22a5f3ae6ba822769b7de7",
     "bin": [
         [
             "Foxmail.exe",
