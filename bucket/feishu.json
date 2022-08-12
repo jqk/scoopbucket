@@ -5,9 +5,9 @@
         "identifier": "EULA",
         "url": "https://www.feishu.cn/en/terms"
     },
-    "version": "5.17.7",
-    "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/19cc33/Feishu-win32_ia32-5.17.7-signed.exe#/feishu-5.17.7.7z",
-    "hash": "md5:19cc33fa11dea771738420b2929268cb",
+    "version": "5.18.5",
+    "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/b78084/Feishu-win32_ia32-5.18.5-signed.exe#/feishu-5.18.5.7z",
+    "hash": "48cc1cba8f3728f45b61e3a979973eb5b8325b7c1f4e854c0bd649131daa2a59",
     "extract_to": "app",
     "shortcuts": [
         [
@@ -17,6 +17,7 @@
     ],
     "checkver": {
         "url": "https://www.feishu.cn/api/downloads",
+        "jsonpath": "$.versions",
         "regex": "(?sm)Windows.*?https://(?<path>[\\w.-/].*?)-(?<version>[\\d+\\.]+\\d+)(?<suffix>[\\w.-].*?).exe"
     },
     "autoupdate": {
