@@ -3,8 +3,8 @@
     "description": "A unlimited speed multifunctional remote control software",
     "version": "4.3.3.0",
     "license": "Proprietary",
-    "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z",
-    "hash": "ac7c0df02fa3839573aa81ead041ece7488b83d310443b3e35c025220bd14de2",
+    "url": "https://dl.todesk.com/irrigation/ToDesk_4.3.3.0.exe#/dl.7z",
+    "hash": "9df3c12ffd31a85c6edb8efaf3dd71e853a30b117f1a5e6a10d5f1090777cb72",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
         "    New-Item -Force -Path \"$persist_dir\\config.ini\" -ItemType File -Value \"[ConfigInfo]`nautoStart=0\" | Out-Null",
@@ -26,6 +26,6 @@
         "regex": ">([\\d.]+)</div>"
     },
     "autoupdate": {
-        "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z"
+        "url": "https://dl.todesk.com/irrigation/ToDesk_$version.exe#/dl.7z"
     }
 }
