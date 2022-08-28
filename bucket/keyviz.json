@@ -1,10 +1,10 @@
 {
-    "version": "1.0.2",
+    "version": "1.0.6",
     "description": "Keyviz is a free and open-source software to visualize your ⌨️ keystrokes in realtime.",
     "homepage": "https://github.com/mulaRahul/keyviz",
     "license": "Apache 2.0",
-    "url": "https://github.com/mulaRahul/keyviz/releases/download/v1.0.2/keyviz-portable-v1.0.2.exe",
-    "hash": "33cb85d3f8e73b66858e3b927f9228db2c0693265631c1990644d1fe45a20b00",
+    "url": "https://github.com/mulaRahul/keyviz/releases/download/v1.0.6/keyviz-v1.0.6-portable.zip",
+    "hash": "61f4e3e3668b7e6c749156ff732547612edebab94ed2cc38361e8c110e35e81a",
     "bin": "keyviz.exe",
     "shortcuts": [
         [
@@ -13,10 +13,10 @@
         ]
     ],
     "installer": {
-        "script": "Rename-Item \"$dir\\keyviz-portable-v$version.exe\" \"$dir\\keyviz.exe\""
+        "script": "Rename-Item \"$dir\\keyviz-v$version-portable.exe\" \"$dir\\keyviz.exe\""
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/mulaRahul/keyviz/releases/download/v$version/keyviz-portable-v$version.exe"
+        "url": "https://github.com/mulaRahul/keyviz/releases/download/v$version/keyviz-v$version-portable.zip"
     }
 }
