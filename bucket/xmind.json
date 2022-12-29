@@ -1,0 +1,37 @@
+{
+    "version": "22.11.2677",
+    "description": "A full-featured mind mapping and brainstorming tool",
+    "homepage": "https://xmind.app",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://xmind.app/terms/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dl3.xmind.net/Xmind-for-Windows-x64bit-22.11.2677.exe#/dl.7z",
+            "hash": "b40233bf5e0a494ff1b297249d829575cfacc247c39566f240a19c4da91fbe94",
+            "installer": {
+                "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+            }
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse",
+    "shortcuts": [
+        [
+            "XMind.exe",
+            "XMind"
+        ]
+    ],
+    "checkver": {
+        "url": "https://xmind.app/desktop/release-notes/",
+        "regex": ">(?<ver>\\d+.\\d+)\\s\\((?<build>\\d+)",
+        "replace": "${ver}.${build}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dl3.xmind.net/Xmind-for-Windows-x64bit-$version.exe#/dl.7z"
+            }
+        }
+    }
+}
