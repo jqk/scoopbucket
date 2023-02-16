@@ -1,136 +1,47 @@
-# Generic scoop bucket
+# JQK
 
-For information about `lc_` software, see [here](README_LOCAL.md).
+## Scoop bucket
 
+This is a [Scoop](http://scoop.sh/) [bucket](https://github.com/lukesampson/scoop/wiki/Buckets), which contains nonportable application.
 
+[Scoop](http://scoop.sh/) is an excellent package manager for Windows. It allows installing, uninstalling and updating apps from the command line. The [Scoop repository](https://github.com/lukesampson/scoop) contains many useful applications and there are many more in the [extras bucket](https://github.com/lukesampson/scoop-extras). A bucket is a collection of application manifests, while an app manifest is a recipe for installing software.
 
-❗❗🎉 Repository was converted into Template. See [blog](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/?utm_campaign=1559837005&utm_medium=social&utm_source=twitter&utm_content=1559837005) for more information. 🎉❗❗
+## This bucket
 
-In this repository you will find everything you need to know about creating custom bucket with appveyor support.
+### Install
 
-## Files and helpers
+```powershell
+scoop bucket add jqk https://github.com/jqk/scoopbucket
+```
 
-### `bucket` Folder
+### Apps
 
-- All manifests belong here
-- `.gitkeep` file could be removed after you push your first manifest
-
-### `bin` Folder
-
-Scripts which will save you time while debuging and writing manifests.
-If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
-
-### `Bucket.Tests.ps1` File
-
-- Test which are executed inside Appveyor pipeline
-- Could be configured as`pre_commit` hook
-
-### `.vscode` Folder
-
-Contains all syntax highlighting, code formating, manifest creating tools you could use.
-
-- Extensions
-  - All extensions which will save your time while writing manifests are in recommended sections
-  - You will be notified about installing them when you open project
-- Settings
-  - All settings are set to be compatible with Appveyor pipeline and upstream (official) repositories
-    - No need to worry about formating restrictions between repositories.
-- Code snippets
-  - > Code snippets are templates that make it easier to enter repeating code patterns, such as loops or conditional-statements.
-    >
-  - You could use workspace wide code snippets for speed up manifest creating
-  - While editing json file write partitial name of snippet and press`tab`
-  - Available Json snippets:
-    - `app`
-      - Create default manifest structure
-    - `appArch`
-      - Create default manifest structure with full acrchitecture
-    - `arch`
-      - Create only architecture property with 64bit and 32bit
-    - `upAr`
-      - Create autoupdate property with architecture
-    - `persistCheck`
-      - Installer / pre_install script for checking if file is already persisted or need to be created
-
-### `.github` Folder
-
-GitHub repository configuration.
-
-- `workflows` folder
-  - Linux (legacy) version[GitHub Actions](https://github.com/features/actions) configuration for automatic issue/PR/updates handling.
-  - Windows version of actions could be used for better and future proof implementation (see[https://github.com/Ash258/Scoop-GithubActions/tree/master-win](https://github.com/Ash258/Scoop-GithubActions/tree/master-win) for updated configs)
-- `CODEOWNERS`
-  - Pull requests will request review for users defined in this file
-- `PULL REQUEST TEMPLATE`
-  - Prefilled pull request types with proper titles
-- `ISSUE TEMPLATE`
-  - The most used issue templates for users to select and prefilled with required information and labels
-
-### `config files`
-
-- `.appveyor.yml`
-  - Definition of Appveyor CI pipeline
-- `.editorconfig`
-  - Universal configuration file, compatible with all types of editors
-  - Defines how files should look
-- `.gitattributes`
-  - Simplifying line endings for git
-  - No need to configure`auto.clrf` setting on each clone or new workspaces
-- `Bucket.Tests.ps1`
-  - Test which are executed inside Appveyor pipeline
-  - Could be configured as`pre_commit` hook
-
-## How to use and adopt this bucket
-
-1. Click on`Use this template` to create new repository in your account with same files
-2. Open project settings and**give your bucket in new name**
-3. Add proper description of repository
-
-   - Information about what type of manifests could be found here
-4. Add`scoop-bucket` tag for repository
-
-   - Your manifests will be automatically available at[https://scoop-docs.now.sh/apps/](https://scoop-docs.now.sh/apps/)
-5. Enable appveyor CI/CD
-
-   1. Register / Login to[Appveyor](https://ci.appveyor.com/login)
-   2. Click`New Project`
-   3. From Left Panel, choose your source control variant (Github)
-   4. From Right Panel, choose repository with bucket and click`+ Add`
-   5. 🎉 Project created and ready to build 🎉
-   6. Get Badge URL
-      1. Open Appveyor Project settings
-      2. Navigate to Badges
-      3. Copy`Branch Sample markdown code` snippet for further usage
-         - Only master branch is better, since you can freely test in other branches and do not mystificate users
-         - [You could use alternative styles](https://shields.io/category/build#styles)
-6. Clone project into some folder
-
-   - `git clone https://github.com/USER/REPO.git MyAwesomeBucket`
-7. Open vscode with this clone
-
-   - `code MyAwesomeBucket`
-8. Configure remote repository
-
-   1. `git remote add 'upstream' 'https://github.com/Ash258/GenericBucket.git'`
-
-   - This step will allow you to synchronize changes with this template repository
-   - If some changes are pushed into this repository and you want to reflect them into your bucket, you can simply do something like:
-     - `git fetch --all`
-     - `git checkout -B upstream-master -t upstream/master`
-     - Do changes
-     - `git merge master` or create PR in github
-9. Create proper README.md
-
-   1. Open`README.template.md`
-   2. Replace all`%%templatestring%%` with real and according values
-      1. Replace appveyor status badge with yours
-         - See:[https://appveyor.com/docs/status-badges/](https://appveyor.com/docs/status-badges/)
-   3. Override this README with completed`README.template.md`
-   4. Remove template`README.template.md`
-10. Repository tweaks
-
-    1. Open`.github\CODEOWNERS` and change`@Ash258` to desired github username
-    2. Actions
-       1. Open each file in`.github\workflows` and change`youremail@email.com` with your email
-       2. Visit[https://github.com/Ash258/Scoop-GithubActions](https://github.com/Ash258/Scoop-GithubActions) for more information
-11. 🎉🎉 Everything set. High Quality bucket is ready for new users 🎉🎉
+| app                                                                            | auto update | original | use for                                                  |
+| ------------------------------------------------------------------------------ | :---------: | :------: | -------------------------------------------------------- |
+| [clickcharts](https://www.nchsoftware.com/chart/index.html)                    |   &nbsp;    |    √     | Diagram Drawing and Editing                              |
+| [czkawka-gui](https://github.com/qarmin/czkawka)                               |      √      |    √     | Find duplicates, similar images and music                |
+| [diskusage](https://github.com/chenquan/diskusage)                             |      √      |    √     | Showing disk usage                                       |
+| [dsq](https://github.com/multiprocessio/dsq)                                   |      √      |    √     | Running SQL queries against JSON, CSV, Excel, Parquet etc |
+| [edrawmax-cn](https://www.edrawsoft.cn)                                        |      √      |    √     | All-in-one diagramming and graphics software             |
+| [EverythingToolbar](https://github.com/stnkl/EverythingToolbar)                |      √      |    √     | File search integration powered by Everything            |
+| [feishu](https://www.feishu.cn)                                                |      √      |    √     | Connect with teammates anytime and anywhere              |
+| [foxit-reader](https://www.foxitsoftware.com)                                  |      √      |    √     | PDF reader                                               |
+| [foxmail](https://www.foxmail.com)                                             |      √      |    √     | Mail client                                              |
+| [glaryutilities](https://www.glarysoft.com/glary-utilities)                    |      √      |  &nbsp;  | All-in-one utility for cleaning your PC                  |
+| [greenbrowser](http://www.morequick.com)                                       |   &nbsp;    |    √     | Light weight web browser                                 |
+| [intellij-idea-ultimate-portable](https://www.jetbrains.com/idea)              |      √      |  &nbsp;  | IntelliJ IDEA Ultimate                                   |
+| [keyblaze](https://www.nchsoftware.com/typingtutor/index.html)                 |   &nbsp;    |    √     | Learn to Touch Type, Complete with Typing Games          |
+| [keyviz](https://github.com/mulaRahul/keyviz)                                  |      √      |    √     | visualize your ⌨️ keystrokes                             |
+| [mindmaster](https://www.edrawsoft.cn)                                         |      √      |    √     | Collaborative mind mapping and brainstorming             |
+| [orange-file-searcher](https://github.com/naaive/orange)                       |      √      |    √     | File search desktop application                          |
+| [sharpkeys](https://github.com/randyrants/sharpkeys)                           |      √      |  &nbsp;  | Remap one key to any other key                           |
+| [tencentmeeeting](https://meeting.tencent.com)                                 |      √      |  &nbsp;  | Video conferencing app by Tencent                        |
+| [TextLocator](https://gitee.com/dotnetchina/TextLocator)                       |      √      |    √     | A searching tool for Word, Excel, Pdf etc                |
+| [thebrain](https://www.thebrain.com)                                           |      √      |    √     | Brain mapping                                            |
+| [todesk](https://www.todesk.com)                                               |      √      |  &nbsp;  | Remote control software                                  |
+| [tradingview](https://www.tradingview.com/chart)                               |      √      |    √     | TradingView Desktop                                      |
+| [utools](https://u.tools)                                                      |      √      |  &nbsp;  | Productive tools set and launcher                        |
+| [vmware-workstation-pro](https://www.vmware.com/products/workstation-pro.html) |      √      |  &nbsp;  | VMware Workstation Pro                                   |
+| [wechatwork](https://work.weixin.qq.com)                                       |   &nbsp;    |  &nbsp;  | Connection Makes a Smarter Business                      |
+| [xmind](https://xmind.app)                                                     |      √      |    √     | Mind mapping and brainstorming tool                      |
+| [zhizhi-reader](http://www.zhizhireader.com)                                   |   &nbsp;    |    √     | Pdf reader with comment & note function                  |
