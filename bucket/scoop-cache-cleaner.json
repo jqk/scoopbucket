@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "A commandline tool used to clean up the SCOOP cache directory.",
     "homepage": "https://github.com/jqk/scoop-cache-cleaner",
     "license": "Apache 2.0",
-    "url": "https://github.com/jqk/scoop-cache-cleaner/releases/download/v1.0.0/scc-windows-v1.0.0.tgz",
-    "hash": "6f2329063fb66898f41d76f4f34c5ec698798138857254e6fc900e54ae4f178a",
+    "url": "https://github.com/jqk/scoop-cache-cleaner/releases/download/v2.0.0/scc-windows-v2.0.0.tgz",
+    "hash": "af7eea09d0585ce13eee2b77b6b471ead31b32c92d7b9b047fca71e7084b00ab",
     "bin": "scc.exe",
     "shortcuts": [
         [
