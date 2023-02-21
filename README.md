@@ -39,6 +39,7 @@ scoop bucket add ajqk https://github.com/jqk/scoopbucket
 | [keyviz](https://github.com/mulaRahul/keyviz) ⌨                                   |      √      |    √     | visualize your ⌨️ keystrokes                              |
 | [mindmaster](https://www.edrawsoft.cn) 🔓                                         |      √      |    √     | Collaborative mind mapping and brainstorming              |
 | [orange-file-searcher](https://github.com/naaive/orange) ⌨                        |      √      |    √     | File search desktop application                           |
+| [scoop-cache-cleaner](https://github.com/jqk/scoop-cache-cleaner) ⌨               |      √      |    √     | Clean scoop cache                                         |
 | [sharpkeys](https://github.com/randyrants/sharpkeys) ⌨                            |      √      |  &nbsp;  | Remap one key to any other key                            |
 | [tencentmeeeting](https://meeting.tencent.com)                                    |      √      |  &nbsp;  | Video conferencing app by Tencent                         |
 | [TextLocator](https://gitee.com/dotnetchina/TextLocator) ⌨                        |      √      |    √     | A searching tool for Word, Excel, Pdf etc                 |
