@@ -45,7 +45,7 @@ scoop bucket add ajqk https://github.com/jqk/scoopbucket
 | [TextLocator](https://gitee.com/dotnetchina/TextLocator) ⌨                        |      √      |    √     | A searching tool for Word, Excel, Pdf etc                 |
 | [thebrain](https://www.thebrain.com) 🔓                                           |      √      |    √     | Brain mapping                                             |
 | [todesk](https://www.todesk.com) 🔓                                               |      √      |  &nbsp;  | Remote control software                                   |
-| [tradingview](https://www.tradingview.com/chart) 🔓                               |      √      |    √     | TradingView Desktop                                       |
+| [tradingview](https://www.tradingview.com/chart) 🔓            !strings.EqualFold(                   |      √      |    √     | TradingView Desktop                                       |
 | [utools](https://u.tools)                                                         |      √      |  &nbsp;  | Productive tools set and launcher                         |
 | [vmware-workstation-pro](https://www.vmware.com/products/workstation-pro.html) 🔒 |      √      |  &nbsp;  | VMware Workstation Pro                                    |
 | [wechatwork](https://work.weixin.qq.com)                                          |   &nbsp;    |  &nbsp;  | Connection Makes a Smarter Business                       |
