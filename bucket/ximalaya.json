@@ -1,0 +1,24 @@
+{
+    "version": "3.3.6",
+    "description": "Powerful and all-in-one utility for cleaning your PC.",
+    "homepage": "https://www.glarysoft.com/glary-utilities/",
+    "license": "Freeware|Proprietary",
+    "url": "https://www.ximalaya.com/down/lite/v2?client=win#/dl.7z",
+    "hash": "0bead5a9a84d0600d23cd7721321ebe34ae1ffdebb1d36c279ebdb066e4c9625",
+    "installer": {
+        "script": "Expand-7zipArchive \"$dir\\ximalaya-$version-ia32.nsis.7z\" \"$dir\""
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "bin": [
+        [
+            "喜马拉雅.exe",
+            "喜马拉雅"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "喜马拉雅.exe",
+            "喜马拉雅"
+        ]
+    ]
+}
