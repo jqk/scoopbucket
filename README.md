@@ -17,7 +17,7 @@ scoop bucket add ajqk https://github.com/jqk/scoopbucket
 ### Apps
 
 > ⌨ is opensource.
-> 🔓 is partly free, a key is required for full functions.
+> 🔓 is partly free, a key is required for full functions or paid services.
 > 🔒 is not free, needs a key.
 > others are free to use but not opensource.
 
@@ -45,10 +45,11 @@ scoop bucket add ajqk https://github.com/jqk/scoopbucket
 | [TextLocator](https://gitee.com/dotnetchina/TextLocator) ⌨                        |      √      |    √     | A searching tool for Word, Excel, Pdf etc                 |
 | [thebrain](https://www.thebrain.com) 🔓                                           |      √      |    √     | Brain mapping                                             |
 | [todesk](https://www.todesk.com) 🔓                                               |      √      |  &nbsp;  | Remote control software                                   |
-| [tradingview](https://www.tradingview.com/chart) 🔓            !strings.EqualFold(                   |      √      |    √     | TradingView Desktop                                       |
+| [tradingview](https://www.tradingview.com/chart) 🔓 !strings.EqualFold(           |      √      |    √     | TradingView Desktop                                       |
 | [utools](https://u.tools)                                                         |      √      |  &nbsp;  | Productive tools set and launcher                         |
 | [vmware-workstation-pro](https://www.vmware.com/products/workstation-pro.html) 🔒 |      √      |  &nbsp;  | VMware Workstation Pro                                    |
 | [wechatwork](https://work.weixin.qq.com)                                          |   &nbsp;    |  &nbsp;  | Connection Makes a Smarter Business                       |
+| [ximalaya](https://www.ximalaya.com) 🔓                                           |   &nbsp;    |    √     | Online music                                              |
 | [xmind](https://xmind.app) 🔓                                                     |      √      |    √     | Mind mapping and brainstorming tool                       |
 | [zhizhi-reader](http://www.zhizhireader.com)                                      |   &nbsp;    |    √     | Pdf reader with comment & note function                   |
 

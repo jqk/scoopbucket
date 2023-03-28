@@ -1,4 +1,4 @@
-# Scoop安装本地应用程序说明
+# Scoop 安装本地应用程序说明
 
 ## 一、原因
 
@@ -75,8 +75,9 @@ scoop update lc_systemexplorer.json
 
 ## 四、本地应用软件列表
 
-| 文件名                          | 说明                         | app_name          |
-| :------------------------------ | :--------------------------- | :---------------- |
-| System_Explorer_v7.1.0.5359.exe | 官网最新版为7.0.0，已不再更新  | lc_systemexplorer |
-| WXWorkLocal_2.5.40002.154.exe   | 企业微信首发定制版，专网使用 | lc_bchdwechatwork |
-| XYLinkClient-102.29.0.32835.exe | 小鱼易连首发定制版，专网使用 | lc_bchdxylink     |
+| 文件名                          | 说明                           | app_name          |
+| :------------------------------ | :----------------------------- | :---------------- |
+| System_Explorer_v7.1.0.5359.exe | 官网最新版为 7.0.0，已不再更新 | lc_systemexplorer |
+| WXWorkLocal_2.5.40002.154.exe   | 企业微信首发定制版，专网使用   | lc_bchdwechatwork |
+| XYLinkClient-102.29.0.32835.exe | 小鱼易连首发定制版，专网使用   | lc_bchdxylink     |
+| PDManer-win_v4.5.1.zip          | PDManer，无法直接下载          | lc_pdmaner        |
