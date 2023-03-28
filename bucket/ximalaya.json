@@ -1,8 +1,8 @@
 {
     "version": "3.3.6",
-    "description": "Powerful and all-in-one utility for cleaning your PC.",
-    "homepage": "https://www.glarysoft.com/glary-utilities/",
-    "license": "Freeware|Proprietary",
+    "description": "Online music app.",
+    "homepage": "https://www.ximalaya.com",
+    "license": "Freeware",
     "url": "https://www.ximalaya.com/down/lite/v2?client=win#/dl.7z",
     "hash": "0bead5a9a84d0600d23cd7721321ebe34ae1ffdebb1d36c279ebdb066e4c9625",
     "installer": {
