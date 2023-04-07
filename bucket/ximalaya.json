@@ -4,7 +4,7 @@
     "homepage": "https://www.ximalaya.com",
     "license": "Freeware",
     "url": "https://www.ximalaya.com/down/lite/v2?client=win#/dl.7z",
-    "hash": "0bead5a9a84d0600d23cd7721321ebe34ae1ffdebb1d36c279ebdb066e4c9625",
+    "hash": "bfc6955980077628889e366a7a874208e4f03e34e9ede39281f9b2912a6abfa3",
     "installer": {
         "script": "Expand-7zipArchive \"$dir\\ximalaya-$version-ia32.nsis.7z\" \"$dir\""
     },
