@@ -1,10 +1,10 @@
 {
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "A tool for showing disk usage. (Linux, macOS and Windows).",
     "homepage": "https://github.com/chenquan/diskusage",
     "license": "Apache 2.0",
-    "url": "https://github.com/chenquan/diskusage/releases/download/v1.1.2/diskusage-v1.1.2-windows-amd64.zip",
-    "hash": "41f221c0056ed579ead293d75d75c853e8173487ad4947a6b7bd9115ce34d796",
+    "url": "https://github.com/chenquan/diskusage/releases/download/v1.1.3/diskusage-v1.1.3-windows-amd64.zip",
+    "hash": "70e8d210b408098bd9b266f5897c401e51ab632dc385c425e9cad49af5c68ab0",
     "bin": "diskusage.exe",
     "shortcuts": [
         [
