@@ -1,0 +1,25 @@
+{
+    "version": "1.10.0",
+    "description": "Online vedio app.",
+    "homepage": "https://www.bilibili.com",
+    "license": "Freeware",
+    "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe#/dl.7z",
+    "hash": "92a084200026217fbff9960f27d1b914fa0cf3a23c9b823baf0f88d3f4702e22",
+    "installer": {
+        "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "bin": [
+        [
+            "哔哩哔哩.exe",
+            "哔哩哔哩"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "哔哩哔哩.exe",
+            "哔哩哔哩"
+        ]
+    ],
+    "notes": "Check version number manually."
+}
