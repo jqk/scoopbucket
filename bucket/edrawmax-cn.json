@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.edrawsoft.cn",
     "description": "All-in-one diagramming and graphics software.",
-    "version": "12.0.8",
+    "version": "12.1.0",
     "license": "shareware",
     "url": "https://cc-download.edrawsoft.cn/origin/edraw-max_cn_full5374.exe#/setup.exe",
-    "hash": "bc6eaf17affdff2299c9f0ce979f326438b6bffa3506601be7e5a47bad84687d",
+    "hash": "40e03f270e047e09a2d943a4e09c9419471e9a0d09f61e300994f8319f0f9d4a",
     "bin": "edrawmax.exe",
     "installer": {
         "script": "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
