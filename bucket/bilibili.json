@@ -1,10 +1,10 @@
 {
-    "version": "1.10.0",
+    "version": "1.11.0",
     "description": "Online vedio app.",
     "homepage": "https://www.bilibili.com",
     "license": "Freeware",
     "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe#/dl.7z",
-    "hash": "92a084200026217fbff9960f27d1b914fa0cf3a23c9b823baf0f88d3f4702e22",
+    "hash": "sha512:890c648ead6d5fae238c33dab99eea15c86d9096b650158fc658dd592f4c7ed62b2f1ab28b231751241f7436ba7a1c839891e2ba545c0faf91eb26ec0465d3eb",
     "installer": {
         "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
     },
@@ -21,5 +21,30 @@
             "哔哩哔哩"
         ]
     ],
+    "checkver": {
+        "script": [
+            "$url = 'https://api.bilibili.com/x/elec-frontend/update/latest.yml'",
+            "$cont = Invoke-RestMethod $url",
+            "$r = 'version:\\s*([\\d.]+)'",
+            "if (!($cont -match $r)) { Write-Error \"Could not match $r in $url\"; continue }",
+            "$ver = $matches[1]",
+            "$assetUrl = \"https://api.bilibili.com/x/elec-frontend/update/bilibili-setup-v$ver.exe.blockmap\"",
+            "$assetReq = [System.Net.HttpWebRequest]::Create($assetUrl)",
+            "$assetReq.Headers.Add('appversion', '0.0.0')",
+            "$assetCont = $assetReq.GetResponse().ResponseUri.AbsoluteUri",
+            "$r = 'win/([\\d]+)/public'",
+            "if (!($assetCont -match $r)) { Write-Error \"Could not match $r in $url\"; continue }",
+            "$code = $matches[1]",
+            "Write-Output $ver $code"
+        ],
+        "regex": "([\\d.]+) (?<code>[\\w.]+)"
+    },
+    "autoupdate": {
+        "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe#/dl.7z",
+        "hash": {
+            "url": "https://api.bilibili.com/x/elec-frontend/update/latest.yml",
+            "regex": "sha512:\\s+$base64"
+        }
+    },
     "notes": "Check version number manually."
 }
