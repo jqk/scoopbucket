@@ -1,0 +1,19 @@
+{
+    "version": "1.0.0",
+    "description": "a command line tool used to search all file extensions under a given path.",
+    "homepage": "https://github.com/jqk/FileExtensionCounter",
+    "license": "MIT",
+    "url": "https://github.com/jqk/FileExtensionCounter/releases/download/v1.0.0/fec-windows-amd64-v1.0.0.tgz",
+    "hash": "a839410f69c4e7ab8bfc550ebbe735133fca2a63dbe6c9d23724613a61f25497",
+    "bin": "fec.exe",
+    "shortcuts": [
+        [
+            "fec.exe",
+            "file extension counter"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/jqk/FileExtensionCounter/releases/download/v$version/fec-windows-amd64-v$version.tgz"
+    }
+}
