@@ -1,0 +1,37 @@
+{
+    "version": "2.0.4",
+    "description": "An intelligent and versatile general-purpose SQL client and reporting tool for databases which integrates ChatGPT capabilities.",
+    "homepage": "https://github.com/chat2db/Chat2DB",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://oss-chat2db.alibaba.com/release/2.0.4/Chat2DB%20Setup%202.0.4.exe",
+            "hash": "2505cded77d6f55e5fd2f8aa438380f04ccf8305fbb45b52b9e18d3d76cc535e"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-7zipArchive -Path \"$dir\\Chat2DB%20Setup%20$version.exe\" -Removal",
+            "Expand-7zipArchive -Path \"$dir\\`$PLUGINSDIR\\app-64.7z\" -DestinationPath $dir"
+        ]
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+        "Remove-Item \"$dir\\`$R0\" -Force -Recurse"
+    ],
+    "bin": "chat2db.exe",
+    "shortcuts": [
+        [
+            "chat2db.exe",
+            "Chat2DB"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://oss-chat2db.alibaba.com/release/$version/Chat2DB%20Setup%20$version.exe"
+            }
+        }
+    }
+}
