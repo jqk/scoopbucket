@@ -1,12 +1,12 @@
 {
-    "version": "2.0.11",
+    "version": "2.0.12",
     "description": "An intelligent and versatile general-purpose SQL client and reporting tool for databases which integrates ChatGPT capabilities.",
     "homepage": "https://github.com/chat2db/Chat2DB",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://www.github.com/chat2db/Chat2DB/releases/download/v2.0.11/Chat2DB-Setup-2.0.11.exe",
-            "hash": "6a4fc25fff499aec7c0accfdd853b9a671f4bc2194f6667b7df14ad26cc0289f"
+            "url": "https://www.github.com/chat2db/Chat2DB/releases/download/v2.0.12/Chat2DB-Setup-2.0.12.exe",
+            "hash": "28656a1cb319c09875207bf2f819ab916513f232fcc839c608672d286fab0705"
         }
     },
     "installer": {
