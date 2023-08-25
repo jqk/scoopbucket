@@ -1,10 +1,10 @@
 {
-    "version": "1.0.5",
+    "version": "1.0.7",
     "description": "Free professional low code online drawing tool.",
     "homepage": "https://github.com/pddon/pddon-win",
     "license": "Freeware",
-    "url": "https://github.com/pddon/pddon-win/releases/download/v1.0.5/pddon.com-Setup-1.0.5.exe",
-    "hash": "d059c1fe636ffa8a2badeff62b90e5bc305aad128652fbea87d83cb23b7fdf17",
+    "url": "https://github.com/pddon/pddon-win/releases/download/v1.0.7/pddon.com-Setup-1.0.7.exe",
+    "hash": "9583e53b632f08c1c7cb4f38bde39866bac7341f7d04018a45dc4037b08d7b1a",
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
