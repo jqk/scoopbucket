@@ -1,10 +1,10 @@
 {
     "homepage": "https://freefilesync.org/",
     "description": "A folder comparison and synchronization software.",
-    "version": "11.18",
+    "version": "12.5",
     "license": "freeware",
-    "url": "https://freefilesync.org/download/FreeFileSync_11.18_Windows_Setup.exe#/setup.exe",
-    "hash": "ab4331a85a3107a26695ee3b1713e9f6aac8e70f843841d9e9e1c3b53da0552a",
+    "url": "https://freefilesync.org/download/FreeFileSync_12.5_Windows_Setup.exe#/setup.exe",
+    "hash": "6018d6407f4b483762ef19cdb0511809cb45881bb878c728eb4ee0f644fc601f",
     "innosetup": true,
     "bin": "freefilesync.exe",
     "shortcuts": [
@@ -13,7 +13,7 @@
             "Free File Sync"
         ]
     ],
-    "pre_install":"Copy-Item \"$scoopdir\\apps\\FreeFileSync\\current\\Install.dat\" -Destination \"$dir\" -Force",
+    "pre_install": "Copy-Item \"$scoopdir\\apps\\FreeFileSync\\current\\Install.dat\" -Destination \"$dir\" -Force",
     "post_install": "Copy-Item \"$scoopdir\\local_installers\\FreeFileSync\\Install.dat\" -Destination \"$dir\" -Force",
     "checkver": {
         "url": "https://freefilesync.org/download.php",
