@@ -1,19 +1,16 @@
-version: 1.0.0-alpha.13
+version: 1.0.0-alpha.14
 description: A lightweight graphic-centric productivity tool.
 homepage: https://github.com/revezone/revezone
 license: Apache 2.0
-url: https://github.com/revezone/revezone/releases/download/1.0.0-alpha.13/revezone-1.0.0-alpha.13-setup.exe
-hash: 54a64c6c13a16f56592ba154e753475cbf38b08462cfb288c0cb50ad693070a8
+url: https://github.com/revezone/revezone/releases/download/1.0.0-alpha.14/revezone-1.0.0-alpha.14-setup.exe
+hash: a338d594e346acd8b4eab4036a850b57a6207e9a6b26fbc68c7f91cd3d915e61
 installer:
   script:
-    - Expand-7zipArchive -Path "$dir\revezone-$version-setup.exe" -Removal
-    - >-
-      Expand-7zipArchive -Path "$dir\`$PLUGINSDIR\app-64.7z" -DestinationPath
-      $dir
+  - Expand-7zipArchive -Path "$dir\revezone-$version-setup.exe" -Removal
+  - Expand-7zipArchive -Path "$dir\`$PLUGINSDIR\app-64.7z" -DestinationPath $dir
 post_install:
-  - Remove-Item "$dir\`$PLUGINSDIR" -Force -Recurse
-  - Remove-Item "$dir\`$R0" -Force -Recurse
-
+- Remove-Item "$dir\`$PLUGINSDIR" -Force -Recurse
+- Remove-Item "$dir\`$R0" -Force -Recurse
 bin: Revezone.exe
 shortcuts:
 - - Revezone.exe
