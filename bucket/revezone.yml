@@ -1,9 +1,9 @@
-version: 1.0.0-alpha.14
+version: 1.0.0-alpha.17
 description: A lightweight graphic-centric productivity tool.
 homepage: https://github.com/revezone/revezone
 license: Apache 2.0
-url: https://github.com/revezone/revezone/releases/download/1.0.0-alpha.14/revezone-1.0.0-alpha.14-setup.exe
-hash: a338d594e346acd8b4eab4036a850b57a6207e9a6b26fbc68c7f91cd3d915e61
+url: https://github.com/revezone/revezone/releases/download/1.0.0-alpha.17/revezone-1.0.0-alpha.17-setup.exe
+hash: a4f311b1ad8899e094133de2cfd3494805b37e65e96b2409d009a37258495fbe
 installer:
   script:
   - Expand-7zipArchive -Path "$dir\revezone-$version-setup.exe" -Removal
