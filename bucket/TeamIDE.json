@@ -1,0 +1,19 @@
+{
+    "version": "2.4.3",
+    "description": "A database management tool for mysql, es, redis, etc.",
+    "homepage": "https://github.com/team-ide/teamide",
+    "license": "Apache-2.0",
+    "url": "https://github.com/team-ide/teamide/releases/download/v2.4.3/TeamIDE-win-2.4.3.zip",
+    "hash": "1fffb613992f9d606182c947bc9ce1ac6bdc1aaf9cb3af3be48d6fcbe1640eb7",
+    "bin": "TeamIDE.exe",
+    "shortcuts": [
+        [
+            "TeamIDE.exe",
+            "TeamIDE"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/team-ide/teamide/releases/download/v$version/TeamIDE-win-$version.zip"
+    }
+}
