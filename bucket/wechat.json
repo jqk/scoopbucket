@@ -1,5 +1,5 @@
 {
-    "version": "3.9.7",
+    "version": "3.9.8",
     "description": "Free messaging and calling app by Tencent",
     "homepage": "https://pc.weixin.qq.com/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.wechat.com/en/service_terms.html"
     },
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
-    "hash": "bf1f0a79013b1f253ef47a606e20ab636cae80a8aa42c3ab4f01f0b40893a5d0",
+    "hash": "749753d77418666f4f76a107fbf38cfbc8f7df9d19ff0e5218b03a02a6122583",
     "installer": {
         "script": [
             "Remove-Item \"$dir\\`$PLUGINSDIR\", -Force -Recurse",
