@@ -51,4 +51,5 @@
             "open": true,
         },
     ],
+    "editor.inlineSuggest.showToolbar": "onHover",
 }
