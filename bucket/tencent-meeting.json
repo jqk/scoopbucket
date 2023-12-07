@@ -1,10 +1,9 @@
 {
     "version": "3.21.3.430",
     "description": "Video conferencing app by Tencent.",
-    "homepage": "https://ke.qq.com",
+    "homepage": "https://meeting.tencent.com/",
     "license": {
-        "identifier": "Proprietary",
-        "url": "https://ke.qq.com/proService.html"
+        "identifier": "Proprietary"
     },
     "installer": {
         "script": [
@@ -24,8 +23,7 @@
     ],
     "checkver": {
         "url": "https://pc.qq.com/detail/18/detail_26218.html",
-        "regex": "(?<ver>\\.\\d+\\.\\d+\\.\\d+)</li>",
-        "replace": "3${ver}"
+        "regex": "(\\d+\\.\\d+\\.\\d+\\.\\d+)"
     },
     "autoupdate": {
         "url": "https://webcdn.m.qq.com/spcmgr/download/TencentMeeting_0300000000_$version.publish.officialwebsite.exe#/dl.7z"
