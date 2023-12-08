@@ -1,12 +1,12 @@
 {
-    "version": "2.4.2",
+    "version": "2.4.3",
     "description": "All-in-one collaboration platform for API documentation, API debugging, API Mock and API test automation.",
     "homepage": "https://apifox.com",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.apifox.cn/download/2.4.2/Apifox-2.4.2.exe#/dl.7z",
-            "hash": "sha512:d5d48f94b456eaf156261592b0cbeae80f8ffab1cf8a2fc125c6690d16fe62e238c7674f198b50a600a685d9c2e1b385ac8b15c88e8844336fef97137a226255"
+            "url": "https://cdn.apifox.cn/download/2.4.3/Apifox-2.4.3.exe#/dl.7z",
+            "hash": "sha512:f24d122586dd532678c05e3f023650ca528f6b84b9088e7106ed6a446766e54bbc47bae22a8a2593afb5cc1c123996be430bdda147a0e41d80d4001cec67b772"
         }
     },
     "pre_install": [
