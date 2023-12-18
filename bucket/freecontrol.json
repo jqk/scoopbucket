@@ -1,0 +1,19 @@
+{
+    "homepage": "https://github.com/pdone/FreeControl",
+    "description": "Based on the open source project scrcpy, it provides a simple interactive interface.",
+    "version": "1.6.6",
+    "license": "Mit",
+    "url": "https://github.com/pdone/FreeControl/releases/download/v1.6.6/FreeControl.exe",
+    "hash": "5546ff06516e745aea0453ac8a1411c6cb83d313cd220e647b2bf410fede8022",
+    "bin": "FreeControl.exe",
+    "shortcuts": [
+        [
+            "FreeControl.exe",
+            "Free control andriod"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/pdone/FreeControl/releases/download/v$version/FreeControl.exe"
+    }
+}
