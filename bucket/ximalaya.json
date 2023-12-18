@@ -1,10 +1,10 @@
 {
-    "version": "3.3.7",
+    "version": "4.0.2",
     "description": "Online music app.",
     "homepage": "https://www.ximalaya.com",
     "license": "Freeware",
     "url": "https://www.ximalaya.com/down/lite/v2?client=win#/dl.7z",
-    "hash": "bfc6955980077628889e366a7a874208e4f03e34e9ede39281f9b2912a6abfa3",
+    "hash": "3686a1a11a1ac0fc6c3140c63d654f1e80b1032b15a9433e6009c0d9e32c0f7e",
     "installer": {
         "script": "Expand-7zipArchive \"$dir\\ximalaya-$version-ia32.nsis.7z\" \"$dir\""
     },
