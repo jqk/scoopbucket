@@ -1,0 +1,19 @@
+{
+    "version": "0.4.9",
+    "description": "A search engine that does full text indexing. It is a lightweight alternative to Elasticsearch.",
+    "homepage": "https://github.com/zincsearch/zincsearch",
+    "license": "Apache-2.0",
+    "url": "https://github.com/zincsearch/zincsearch/releases/download/v0.4.9/zincsearch_0.4.9_windows_x86_64.tar.gz",
+    "hash": "2eb2524584f5c4a9ec7183553ea968582b8dba7af2ca6478e79b725b66241600",
+    "bin": "zincsearch.exe",
+    "shortcuts": [
+        [
+            "zincsearch.exe",
+            "ZincSearch"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/zincsearch/zincsearch/releases/download/v$version/zincsearch_$version_windows_x86_64.tar.gz"
+    }
+}
