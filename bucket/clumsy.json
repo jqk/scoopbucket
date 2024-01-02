@@ -31,5 +31,6 @@
                 "url": "https://github.com/jagt/clumsy/releases/download/$version/clumsy-$version-win32-a.zip"
             }
         }
-    }
+    },
+    "notes": "Official website is https://jagt.github.io/clumsy"
 }
