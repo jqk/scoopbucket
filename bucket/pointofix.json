@@ -1,0 +1,21 @@
+{
+    "homepage": "https://www.pointofix.de/",
+    "description": "White board software.",
+    "version": "1.8.0",
+    "license": "freeware",
+    "url": "https://www.pointofix.de/download/pointofix180de-20180511-direkt.zip",
+    "hash": "3d016bfef1056358e89bf27ee3e47210182ab23f18ac485b9a36c6159c089476",
+    "bin": "Pointofix.exe",
+    "shortcuts": [
+        [
+            "Pointofix.exe",
+            "Point to fix"
+        ]
+    ],
+    "notes":[
+        "Don't forget to download language package from https://www.pointofix.de/download/",
+        "First install the german Pointofix version. Then copy the desired translation file from the language pack",
+        " into the Pointofix directory and name the file to pointofix_translation.ini. ",
+        "Then restart Pointofix. You'll find further information in the readme file within the language pack."
+    ]
+}
