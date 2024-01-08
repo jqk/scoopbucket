@@ -1,0 +1,20 @@
+{
+    "homepage": "https://cn.anlinksoft.com/",
+    "description": "Connect andriod and windows.",
+    "version": "3.1",
+    "license": "freeware",
+    "url": "https://dl2.anl.ink/AnLinkSetup.zip",
+    "hash": "9a118b46af778daafda098284a4ad094a8a7c4d8f77bf2ba5f50cc74af4905c3",
+    "bin": "anlink.exe",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive -Path \"$dir\\AnLinkSetup.exe\" -Removal"
+        ]
+    },
+    "shortcuts": [
+        [
+            "anlink.exe",
+            "AnLink"
+        ]
+    ]
+}
