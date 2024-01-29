@@ -1,9 +1,9 @@
-version: 2.1.2
+version: 2.1.4
 description: A lightweight virtual CD/DVD/Blu-ray drive that enables to emulate up all popular image types of CD, DVD and Blu-ray Discs to drives.
 homepage: https://www.yubsoft.com/imgdrive
 license: Freeware
-url: https://download.yubsoft.com/imgdrive_2.1.2_portable.zip
-hash: 3d078ce14e720cb3a6d7b18f4b157e38acce117bb5a3aa3b9c31aeace91ea527
+url: https://download.yubsoft.com/imgdrive_2.1.4_portable.zip
+hash: 222f6014d317c4a625d6cc355f805aa2b32150daa440b0c6b7b07b91a6f8f368
 shortcuts:
 - - imgdriveportable.exe
   - Image Drive
