@@ -2,10 +2,10 @@
     "homepage": "https://github.com/hiroi-sora/Umi-OCR",
     "description": "Free, Open-source, Batch Offline OCR Software with PaddleOCR engine.",
     "license": "MIT",
-    "version": "2.0.1",
-    "url": "https://github.com/hiroi-sora/Umi-OCR/releases/download/release%2F2.0.1/Umi-OCR_Paddle_v2.0.1.7z.exe#dl.7z",
-    "hash": "cb51be5c37f69ef6a4a5288c591051d240cf233929daff233a6e957c5eea600d",
-    "extract_dir": "Umi-OCR_Paddle_v2.0.1",
+    "version": "2.0.2",
+    "url": "https://github.com/hiroi-sora/Umi-OCR/releases/download/release%2F2.0.2/Umi-OCR_Paddle_v2.0.2.7z.exe#dl.7z",
+    "hash": "28875194a3c78d2d88ad7f2cb44a4da4a1976e372b84e7dd5864dddf220eba63",
+    "extract_dir": "Umi-OCR_Paddle_v2.0.2",
     "shortcuts": [
         [
             "Umi-OCR.exe",
@@ -13,9 +13,7 @@
         ]
     ],
     "installer": {
-        "script": [
-            "if (!(Test-Path \"$persist_dir\\UmiOCR-data\\.settings\")) { New-Item \"$dir\\UmiOCR-data\\.settings\" | Out-Null }"
-        ]
+        "script": "if (!(Test-Path \"$persist_dir\\UmiOCR-data\\.settings\")) { New-Item \"$dir\\UmiOCR-data\\.settings\" | Out-Null }"
     },
     "persist": "UmiOCR-data\\.settings",
     "checkver": {
