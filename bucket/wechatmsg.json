@@ -1,10 +1,10 @@
 {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "A WeChat history backup tool.",
     "homepage": "https://github.com/LC044/WeChatMsg",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/LC044/WeChatMsg/releases/download/v1.0.6/MemoTrace-1.0.6.exe",
-    "hash": "e97cff93ada83e99bfc09ee1adbdbd6bc1f93450192f8e68f9920e979444ccf3",
+    "url": "https://github.com/LC044/WeChatMsg/releases/download/v1.0.7/MemoTrace-1.0.7.exe",
+    "hash": "c7fec7f74665cc9bdfbe9082cf1ac8af32320eadce3704a98d7971ad4821f773",
     "bin": "MemoTrace.exe",
     "shortcuts": [
         [
