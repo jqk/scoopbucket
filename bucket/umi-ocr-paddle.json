@@ -18,7 +18,7 @@
     "persist": "UmiOCR-data\\.settings",
     "checkver": {
         "github": "https://github.com/hiroi-sora/Umi-OCR",
-        "regex": "/releases/tag/release%2F([\\w.-]+)"
+        "regex": "releases/tag/v([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/hiroi-sora/Umi-OCR/releases/download/release%2F$version/Umi-OCR_Paddle_v$version.7z.exe#dl.7z",
