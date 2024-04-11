@@ -1,5 +1,5 @@
 {
-    "version": "3.9.9",
+    "version": "3.9.10",
     "description": "Free messaging and calling app by Tencent",
     "homepage": "https://pc.weixin.qq.com/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.wechat.com/en/service_terms.html"
     },
     "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
-    "hash": "b89e98d127aadfd1682bd1bda83031f40c35333d4e912f20febdebbe8e07d5bb",
+    "hash": "9602acb85408ee48ee689468f63565496dfb12f1fe21ad674aa423029e38856c",
     "installer": {
         "script": [
             "$configpath = \"$env:APPDATA\\Tencent\\WeChat\\All Users\\config\"",
