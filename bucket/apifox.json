@@ -9,13 +9,19 @@
             "hash": "652c2a02d42aadb21246726ee0016356816f01ea5c18c357c4e1a78c861ab066"
         }
     },
+    "pre_uninstall": [
+        "Stop-Process -Name 'ApifoxAppAgent' -Force"
+    ],
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\Apifox-$version.exe\" -Removal",
             "Expand-7zipArchive -Path \"$dir\\`$PLUGINSDIR\\app-64.7z\" -DestinationPath $dir"
         ]
     },
-    
+    "post_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+        "Remove-Item \"$dir\\`$R0\" -Force -Recurse"
+    ],
     "shortcuts": [
         [
             "Apifox.exe",
@@ -24,10 +30,6 @@
         ]
     ],
     "persist": "UserData",
-    "pre_uninstall": [
-        "Stop-Process -Name 'ApifoxAppAgent' -ErrorAction SilentlyContinue",
-        "Wait-Process -Name 'ApifoxAppAgent' -ErrorAction SilentlyContinue -Timeout 30"
-    ],
     "checkver": {
         "url": "https://apifox.com/help/app/changelog",
         "regex": ">([\\d.]+)<"
