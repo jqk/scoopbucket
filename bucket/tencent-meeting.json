@@ -1,5 +1,5 @@
 {
-    "version": "3.24.3.406",
+    "version": "3.26.11.412",
     "description": "Video conferencing app by Tencent.",
     "homepage": "https://meeting.tencent.com/",
     "license": {
@@ -8,12 +8,12 @@
     "installer": {
         "script": [
             "Remove-Item \"$dir\\wemeetapp_new.exe\" -Force",
-            "Rename-Item \"$dir\\`$_10_\" \"$dir\\$version\"",
+            "Rename-Item \"$dir\\`$_22_\" \"$dir\\$version\"",
             "Remove-Item \"$dir\\`$TEMP\",\"$dir\\`$WINDIR\",\"$dir\\`$PLUGINSDIR\" -Force -Recurse"
         ]
     },
-    "url": "https://webcdn.m.qq.com/spcmgr/download/TencentMeeting_0300000000_3.24.3.406.publish.officialwebsite.exe#/dl.7z",
-    "hash": "feb70b5a7b0e5f8e048237668b3b59ee7029f317672858027dd14e82be2f668a",
+    "url": "https://webcdn.m.qq.com/spcmgr/download/TencentMeeting_0300000000_3.26.11.412_x86_64.publish.officialwebsite.exe#/dl.7z",
+    "hash": "dcbfe32060d0374b453011b2ee072d23cf8620074796aedd8619952f38fd7f9c",
     "bin": "wemeetapp.exe",
     "shortcuts": [
         [
@@ -26,7 +26,7 @@
         "regex": "(\\d+\\.\\d+\\.\\d+\\.\\d+)"
     },
     "autoupdate": {
-        "url": "https://webcdn.m.qq.com/spcmgr/download/TencentMeeting_0300000000_$version.publish.officialwebsite.exe#/dl.7z"
+        "url": "https://webcdn.m.qq.com/spcmgr/download/TencentMeeting_0300000000_$version_x86_64.publish.officialwebsite.exe#/dl.7z"
     },
     "notes": [
         "We don't persist your Tencent Meeting data, they are still storaged in \"$env:APPDATA\\Tencent\\WeMeet\".",
