@@ -1,10 +1,10 @@
 {
     "homepage": "https://freefilesync.org/",
     "description": "A folder comparison and synchronization software.",
-    "version": "13.6",
+    "version": "13.7",
     "license": "freeware",
-    "url": "https://freefilesync.org/download/FreeFileSync_13.6_Windows_Setup.exe#/setup.exe",
-    "hash": "f804ac14d13cbc31bb472f8d833e886f33f8445284f172f19104bbfbc94bd4f5",
+    "url": "https://freefilesync.org/download/FreeFileSync_13.7_Windows_Setup.exe#/setup.exe",
+    "hash": "fb4d282f8d202006d682eef84a83757376c20929f62626e288a159d730fde3c9",
     "innosetup": true,
     "bin": "freefilesync.exe",
     "shortcuts": [
