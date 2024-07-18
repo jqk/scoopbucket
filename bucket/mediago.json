@@ -1,0 +1,26 @@
+{
+    "version": "2.2.3",
+    "description": "Vedio download tool.",
+    "homepage": "https://github.com/caorushizi/mediago",
+    "license": "Freeware",
+    "url": "https://github.com/caorushizi/mediago/releases/download/v2.2.3/mediago-setup-x64-2.2.3.exe",
+    "hash": "c89f57b901caabe75fa187000360e8032edbab747443cc55e83d4bacc7ca6d29",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
+            "Expand-7zipArchive -Path \"$dir\\`$PLUGINSDIR\\app-64.7z\" -DestinationPath $dir"
+        ]
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "bin": "mediago.exe",
+    "shortcuts": [
+        [
+            "mediago.exe",
+            "Media Go"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/caorushizi/mediago/releases/download/v$version/mediago-setup-x64-$version.exe"
+    }
+}
