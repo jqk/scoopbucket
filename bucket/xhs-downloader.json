@@ -1,12 +1,11 @@
 {
-    "version": "1.9",
+    "version": "2.1",
     "description": "A vedio downloader for XHS.",
     "homepage": "https://github.com/JoeanAmier/XHS-Downloader",
     "license": "Apache-2.0",
-    "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/1.9/XHS-Downloader_V1.9_WIN_SetUp.exe",
-    "hash": "7232ac84042f21fcca591e81385d5c37564825036cd41bb77cf4d6c19e250477",
+    "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/2.1/XHS-Downloader_V2.1_WIN.zip",
+    "hash": "8226efdf04ada3770ef7345466dea9ab66c2e92bf310398e3c400bd735e5874e",
     "bin": "main.exe",
-    "innosetup" : true,
     "shortcuts": [
         [
             "main.exe",
@@ -15,6 +14,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/$version/XHS-Downloader_V$version_WIN_SetUp.exe"
+        "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/$version/XHS-Downloader_V$version_WIN.zip"
     }
 }
