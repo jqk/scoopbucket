@@ -1,5 +1,5 @@
 {
-    "version": "3.28.2.407",
+    "version": "3.28.3.422",
     "description": "Video conferencing app by Tencent.",
     "homepage": "https://meeting.tencent.com/",
     "license": {
@@ -12,8 +12,8 @@
             "Remove-Item \"$dir\\`$TEMP\",\"$dir\\`$WINDIR\",\"$dir\\`$PLUGINSDIR\" -Force -Recurse"
         ]
     },
-    "url": "https://webcdn.m.qq.com/spcmgr/download/TencentMeeting_0300000000_3.28.2.407_x86_64.publish.officialwebsite.exe#/dl.7z",
-    "hash": "cc92d94f283a0200ad8080df9789c446d3bce7d4038764aadd5702f66a1e5d66",
+    "url": "https://webcdn.m.qq.com/spcmgr/download/TencentMeeting_0300000000_3.28.3.422_x86_64.publish.officialwebsite.exe#/dl.7z",
+    "hash": "bca6b46f1e844f6e6f74f6b799c2f0f6102f01bcf7139abb72edf8dd421c149d",
     "bin": "wemeetapp.exe",
     "shortcuts": [
         [
