@@ -1,12 +1,12 @@
 {
-    "version": "2.6.5",
+    "version": "2.6.7",
     "description": "All-in-one collaboration platform for API documentation, API debugging, API Mock and API test automation.",
     "homepage": "https://apifox.com",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://file-assets.apifox.com/download/Apifox-windows-latest.zip",
-            "hash": "0bc48460edfbb919282d6783939c676e9e7c0b3b278dfb5a3f6fc77c1dd865a1"
+            "hash": "a7ce063101c12a8c13304d02cc07e20341b5242fead910d2ad4fe48cc2707afd"
         }
     },
     "pre_uninstall": "Stop-Process -Name 'ApifoxAppAgent' -Force",
