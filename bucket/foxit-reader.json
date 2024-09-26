@@ -1,13 +1,13 @@
 {
-    "version": "2024.2.3.25184",
+    "version": "2024.3.0.26795",
     "description": "Super-fast, feature rich PDF reader that offers a delightful reading experience in a small footprint.",
     "homepage": "https://www.foxitsoftware.com/",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.foxitsoftware.com/pdf-reader/eula.html"
     },
-    "url": "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&package_type=exe&language=Chinese&version=2024.2.3.25184#/setup.exe",
-    "hash": "5df4dc972da93404ac3ea4d07d0e3ed1d9e5e5f883d69858584db8d4583253e4",
+    "url": "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&package_type=exe&language=Chinese&version=2024.3.0.26795#/setup.exe",
+    "hash": "64ef44e90646e00ef67d059a5d3e1f318699be0dd76a7520e4fd87262d9df03b",
     "installer": {
         "script": "Expand-InnoArchive -Path \"$dir\\setup.exe\" -Removal"
     },
