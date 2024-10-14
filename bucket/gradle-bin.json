@@ -18,7 +18,7 @@
         "    Write-Host \"Environment variable 'GRADLE_USER_HOME' set to '$path'\"",
         "}"
     ],
-    "persist": ".gradle",
+    "persist": [".gradle", "caches"],
     "bin": "bin\\gradle.bat",
     "checkver": {
         "url": "https://gradle.org/install/",
