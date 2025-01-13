@@ -1,5 +1,5 @@
 {
-    "version": "3.30.11.434",
+    "version": "3.30.20.451",
     "description": "Video conferencing app by Tencent",
     "homepage": "https://meeting.tencent.com/",
     "license": {
@@ -7,8 +7,8 @@
         "url": "https://meeting.tencent.com/declare.html"
     },
     "notes": "We don't persist your Tencent Meeting data, they are still storaged in \"$env:APPDATA\\Tencent\\WeMeet\".",
-    "url": "https://updatecdn.meeting.qq.com/cos/51b163743b49cd3d04e4d552bc38800d/TencentMeeting_0300000000_3.30.11.434.publish.officialwebsite.exe#/dl.7z",
-    "hash": "md5:51b163743b49cd3d04e4d552bc38800d",
+    "url": "https://updatecdn.meeting.qq.com/cos/afad1cbfae8e556aa56fd9988353706e/TencentMeeting_0300000000_3.30.20.451.publish.officialwebsite.exe#/dl.7z",
+    "hash": "md5:afad1cbfae8e556aa56fd9988353706e",
     "installer": {
         "script": [
             "Remove-Item \"$dir\\wemeetapp_new.exe\" -Force",
