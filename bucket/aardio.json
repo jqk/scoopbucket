@@ -4,7 +4,7 @@
     "version": "37.20.0",
     "license": "freeware",
     "url": "https://d.aardio.com/ide/aardio.7z",
-    "hash": "e45cb968c12cf40d4d8a102bea752341e05df736dc20195b692c2127275e616e",
+    "hash": "9b6f2073aecc36b7b268f00faa1e23b720c0fa9d27cf834cfdbf748763a280d7",
     "bin": "aardio.exe",
     "shortcuts": [
         [
