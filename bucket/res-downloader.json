@@ -1,0 +1,26 @@
+{
+    "version": "3.0.2",
+    "description": "A resource downloader",
+    "homepage": "https://github.com/putyy/res-downloader",
+    "license": "Apache-2.0",
+    "url": "https://github.com/putyy/res-downloader/releases/download/3.0.2/res-downloader_3.0.2_x64-installer.exe",
+    "hash": "c70ca49d86d05cfdd62d8c35eded9abcb18c8f5222e29387adfca0d97f5fa849",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal"
+        ]
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "bin": "res-downloader.exe",
+    "shortcuts": [
+        [
+            "res-downloader.exe",
+            "res-downloader"
+        ]
+    ],
+    "persist": "config",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/putyy/res-downloader/releases/download/$version/res-downloader_$version_x64-installer.exe"
+    }
+}
