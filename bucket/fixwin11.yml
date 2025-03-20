@@ -1,9 +1,9 @@
-version: "11.1"
+version: "11.2"
 description: Fix Windows 11. Easily fix and repair Windows 10/11 problems, issues and annoyances.
 homepage: https://www.thewindowsclub.com/fixwin-windows-pc-repair-software
 license: Freeware
 url: https://www.thewindowsclub.com/downloads/FixWin11.zip
-hash: 420453055465215a1eb95348cfad3f1078dfe4aa736abb3d2a7a2600b36ca649
+hash: 2480753a6121d58d270f438a926581150e46d76feef0a6c3ec6ccf6f6d85c7d9
 installer:
   script:
   - $oldName = "FixWin $version"
