@@ -1,14 +1,14 @@
-version: 2024.3.4.1
+version: 2024.3.5
 description: IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
   identifier: Proprietary
   url: https://www.jetbrains.com/store/license.html
 url:
-- https://download.jetbrains.com/idea/ideaIU-2024.3.4.1.exe#/cosi.7z
+- https://download.jetbrains.com/idea/ideaIU-2024.3.5.exe#/cosi.7z
 - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1
 hash:
-- 9bf093beeadadbd3df5d534ecf8154c2e0ebcebccfaff44075d557079863844a
+- f460d7e95191b157355feea06704988b017fcddbd55f62717a2777ad0743d52a
 - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
