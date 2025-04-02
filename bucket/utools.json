@@ -8,14 +8,14 @@
             "url": "https://open.u-tools.cn/download/uTools-7.0.0.exe#/dl.7z",
             "hash": "7868f26779e6a0aeb17a89a3f72df9e3fe0557732b24e90df6b1b6160c0fd6aa",
             "installer": {
-                "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR/app-64.7z\" \"$dir\""
+                "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR/app-64.7z\" \"$dir\\utools\""
             }
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse",
     "shortcuts": [
         [
-            "uTools.exe",
+            "utools\\uTools.exe",
             "uTools"
         ]
     ],
