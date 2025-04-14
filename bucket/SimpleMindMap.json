@@ -1,0 +1,29 @@
+{
+    "version": "0.13.1",
+    "description": "Simple mind map tool.",
+    "homepage": "https://github.com/wanglin2/mind-map",
+    "license": "MIT",
+    "url": "https://github.com/wanglin2/mind-map/releases/download/electron-0.13.1/Setup.0.13.1.exe",
+    "hash": "7a3ae13e535957438d038e62119e6b49b04a2c79211d23c679728e57d9b8fe93",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
+            "Expand-7zipArchive -Path \"$dir\\`$PLUGINSDIR\\app-64.7z\" -DestinationPath $dir"
+        ]
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "bin": "思绪思维导图.exe",
+    "shortcuts": [
+        [
+            "思绪思维导图.exe",
+            "Simple Mind Map"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/wanglin2/mind-map",
+        "regex": "electron-([\\w.-]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/wanglin2/mind-map/releases/download/electron-$version/Setup.$version.exe"
+    }
+}
