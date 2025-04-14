@@ -1,10 +1,10 @@
 {
-    "version": "0.13.1",
+    "version": "0.14.0",
     "description": "Simple mind map tool.",
     "homepage": "https://github.com/wanglin2/mind-map",
     "license": "MIT",
-    "url": "https://github.com/wanglin2/mind-map/releases/download/electron-0.13.1/Setup.0.13.1.exe",
-    "hash": "7a3ae13e535957438d038e62119e6b49b04a2c79211d23c679728e57d9b8fe93",
+    "url": "https://github.com/wanglin2/mind-map/releases/download/electron-0.14.0/Setup.0.14.0.exe",
+    "hash": "5ce238595afef4f3ddb6c24de11db49a0f0c1562d888beffd3ad4982eda76c53",
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
