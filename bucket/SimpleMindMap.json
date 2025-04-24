@@ -3,7 +3,7 @@
     "description": "Simple mind map tool.",
     "homepage": "https://github.com/wanglin2/mind-map",
     "license": "MIT",
-    "url": "https://github.com/wanglin2/mind-map/releases/download/electron-0.14.0/Setup.0.14.0.exe",
+    "url": "https://github.com/wanglin2/mind-map/releases/download/0.14.0/Setup.0.14.0.exe",
     "hash": "5ce238595afef4f3ddb6c24de11db49a0f0c1562d888beffd3ad4982eda76c53",
     "installer": {
         "script": [
@@ -20,10 +20,9 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/wanglin2/mind-map",
-        "regex": "electron-([\\w.-]+)"
+        "github": "https://github.com/wanglin2/mind-map"
     },
     "autoupdate": {
-        "url": "https://github.com/wanglin2/mind-map/releases/download/electron-$version/Setup.$version.exe"
+        "url": "https://github.com/wanglin2/mind-map/releases/download/$version/Setup.$version.exe"
     }
 }
