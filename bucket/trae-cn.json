@@ -42,7 +42,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/1.0.12518/win32/Trae%20CN-Setup-x64.exe"
+                "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/$version/win32/Trae%20CN-Setup-x64.exe"
             }
         }
     },
