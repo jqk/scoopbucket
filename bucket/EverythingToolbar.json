@@ -1,10 +1,10 @@
 {
-    "version": "2.1.2",
+    "version": "2.2.0",
     "description": "Instant file search integration for the Windows taskbar powered by Everything.",
     "homepage": "https://github.com/srwi/EverythingToolbar",
     "license": "MIT",
-    "url": "https://github.com/srwi/EverythingToolbar/releases/download/2.1.2/EverythingToolbar-2.1.2-x64.exe",
-    "hash": "3cb32b5471685186034f3e62fce22df89d53231b310155a80a5149667c5b768a",
+    "url": "https://github.com/srwi/EverythingToolbar/releases/download/2.2.0/EverythingToolbar-2.2.0-x64.exe",
+    "hash": "c1dd83d593a96c47204b75f528277e107416a7002154693d1d6a7858d0b274bb",
     "bin": "EverythingToolbar\\EverythingToolbar.Launcher.exe",
     "shortcuts": [
         [
