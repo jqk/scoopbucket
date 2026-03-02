@@ -23,8 +23,14 @@
         ]
     ],
     "checkver": {
-        "script": "return (Invoke-WebRequest -Useb 'https://xmind.app/desktop/release-notes').ToString()",
-        "regex": ">(\\d+\\.\\d+\\.\\d+)<"
+        "script": [
+            "$url = 'https://www.xmind.app/zen/download/win64'",
+            "$request = [System.Net.HttpWebRequest]::Create($url)",
+            "$request.UserAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36'",
+            "$response = $request.GetResponse()",
+            "Write-Output $response.ResponseUri.AbsoluteUri"
+        ],
+        "regex": "Xmind-for-Windows-x64bit-([\\d.]+)-(?<dt>\\d{12})\\.exe"
     },
     "autoupdate": {
         "architecture": {
