@@ -24,8 +24,8 @@
     ],
     "bin": "bin\\gradle.bat",
     "checkver": {
-        "url": "https://gradle.org/install/",
-        "regex": "The current Gradle release is version ([\\d.]+)"
+        "url": "https://gradle.org/releases/",
+        "regex": ">([\\d.]+)</a>"
     },
     "autoupdate": {
         "url": "https://services.gradle.org/distributions/gradle-$version-bin.zip",
