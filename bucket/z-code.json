@@ -1,0 +1,24 @@
+{
+    "version": "0.20.4",
+    "description": "",
+    "homepage": "https://zcode.z.ai/cn",
+    "license": "Proprietary",
+    "url": "https://cdn.zcode-ai.com/zcode/releases/0.20.4/z-code_0.20.4_x64-setup.exe#/dl.7z",
+    "hash": "b34eeea41ffb9ba020eb901593de700690d97c7885188508ccb86136934baf31",
+    "bin": "z-code.exe",
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "shortcuts": [
+        [
+            "z-code.exe",
+            "Z Code"
+        ]
+    ],
+    "checkver": {
+        "url": "https://zcode.z.ai/cn/changelog",
+        "regex": "/changelog/([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://cdn.zcode-ai.com/zcode/releases/$version/z-code_$version_x64-setup.exe#/dl.7z"
+    },
+    "notes": "English version is in https://zcode-ai.com"
+}
