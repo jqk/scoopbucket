@@ -10,17 +10,14 @@
         "    New-Item -Force -Path \"$persist_dir\\config.ini\" -ItemType File -Value \"[ConfigInfo]`nautoStart=0\" | Out-Null",
         "}"
     ],
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\uninst.exe\" -Force -Recurse",
-    "shortcuts": [
-        [
-            "ToDesk.exe",
-            "ToDesk"
+    "installer": {
+        "script": [
+            "Expand-7zipArchive -Path \"$dir\\app64.7z\" -DestinationPath $dir"
         ]
-    ],
-    "persist": [
-        "Logs",
-        "config.ini"
-    ],
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\",\"$dir\\uninst.exe\", \"$dir\\app32.7z\", \"$dir\\app64.7z\" -Force -Recurse",
+    "shortcuts": [["ToDesk.exe", "ToDesk"]],
+    "persist": ["Logs", "config.ini"],
     "checkver": {
         "url": "https://update.todesk.com/windows/uplog.html",
         "regex": ">([\\d.]+)</div>"
