@@ -1,0 +1,24 @@
+{
+    "version": "11.2",
+    "description": "Fix Windows 11. Easily fix and repair Windows 10/11 problems, issues and annoyances.",
+    "homepage": "https://www.thewindowsclub.com/fixwin-windows-pc-repair-software",
+    "license": "Freeware",
+    "url": "https://www.thewindowsclub.com/downloads/FixWin11.zip",
+    "hash": "2480753a6121d58d270f438a926581150e46d76feef0a6c3ec6ccf6f6d85c7d9",
+    "pre_install": [
+        "$oldName = \"FixWin $version\"",
+        "Rename-Item -Path \"$dir\\$oldName\" -NewName \"$dir\\FixWin\"",
+        "$oldName = \"FixWin $version.exe\"",
+        "Rename-Item -Path \"$dir\\FixWin\\$oldName\" -NewName \"$dir\\FixWin\\FixWin.exe\""
+    ],
+    "shortcuts": [
+        [
+            "FixWin\\FixWin.exe",
+            "Fix Win 11"
+        ]
+    ],
+    "checkver": ">FixWin\\s+([\\d.]+) for Windows 11 and Windows 10</strong></a",
+    "autoupdate": {
+        "url": "https://www.thewindowsclub.com/downloads/FixWin11.zip"
+    }
+}
