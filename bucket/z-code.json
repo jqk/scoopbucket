@@ -1,10 +1,10 @@
 {
-    "version": "0.27.1",
+    "version": "0.28.0",
     "description": "",
     "homepage": "https://zcode.z.ai/cn",
     "license": "Proprietary",
-    "url": "https://cdn.zcode-ai.com/zcode/releases/0.27.1/z-code_0.27.1_x64-setup.exe#/dl.7z",
-    "hash": "1de60baf7d9f8b275d508746352a40b3887f1f46f25d7be5f0a20ca98e49da9c",
+    "url": "https://cdn.zcode-ai.com/zcode/releases/0.28.0/z-code_0.28.0_x64-setup.exe#/dl.7z",
+    "hash": "232030b8d3ce9ed44c25545fe793929d657b298e381e33f14ad546637793d182",
     "bin": "z-code.exe",
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
     "shortcuts": [
