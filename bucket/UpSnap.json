@@ -1,12 +1,12 @@
 {
-    "version": "5.3.4",
+    "version": "5.3.5",
     "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase",
     "homepage": "https://github.com/seriousm4x/UpSnap",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/seriousm4x/UpSnap/releases/download/5.3.4/UpSnap_5.3.4_windows_amd64.zip",
-            "hash": "642d6a0783ad1f6174549904a14b56a30f23cf1bf8de33725b5e458f1b99aa11"
+            "url": "https://github.com/seriousm4x/UpSnap/releases/download/5.3.5/UpSnap_5.3.5_windows_amd64.zip",
+            "hash": "1bb7a4a1df298eea6ee095565e4082e20f9346bf28ac8c38d11bcb95400d2de1"
         }
     },
     "bin": "upsnap.exe",
