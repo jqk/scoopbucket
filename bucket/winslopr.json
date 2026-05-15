@@ -1,0 +1,23 @@
+{
+    "version": "26.04.04",
+    "description": "Windows Slop Remover - A tool to remove unnecessary Windows components",
+    "homepage": "https://github.com/builtbybel/Winslopr",
+    "license": "MIT",
+    "url": "https://github.com/builtbybel/Winslopr/releases/download/26.04.04/Winslopr-26.04.04-win-x64.zip",
+    "hash": "767717646b43787ac19f698fbc1086d91f7c69fae7a470cd4ef78f31d4a4166f",
+    "extract_dir": "winslopr-26.04.04-win-x64",
+    "bin": "Winslopr.exe",
+    "shortcuts": [
+        [
+            "Winslopr.exe",
+            "Winslopr"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/builtbybel/Winslopr",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/builtbybel/Winslopr/releases/download/$version/Winslopr-$version-win-x64.zip"
+    }
+}
