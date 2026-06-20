@@ -1,10 +1,10 @@
 {
-    "version": "0.6.3",
+    "version": "0.6.32",
     "description": "Hermes Desktop - A desktop application",
     "homepage": "https://github.com/fathah/hermes-desktop",
     "license": "MIT",
-    "url": "https://github.com/fathah/hermes-desktop/releases/download/v0.6.3/hermes-desktop-0.6.3-setup.exe",
-    "hash": "fcc8141e31e38ad39dde130d27199ae1edd1c1984c1d008ed400b5138cadc3db",
+    "url": "https://github.com/fathah/hermes-desktop/releases/download/v0.6.32/hermes-desktop-0.6.32-setup.exe",
+    "hash": "6370baee9646ee68fd84214ecf95af256dcc31f23775be602588e426a94e9cc6",
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
