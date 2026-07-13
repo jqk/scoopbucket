@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://xmind.app/zen/download/win64/#dl.7z",
-            "hash": "75ec079232a467c7a4df2dbfc77d67735cb19b0707783a989767c3b9875fc4f0",
+            "hash": "b6066ccc7fd8ebbffd43d74e449dca84b0f06a02daec266930645b5f08e58a61",
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
             }
