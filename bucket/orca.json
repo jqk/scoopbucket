@@ -1,10 +1,10 @@
 {
-    "version": "1.4.146",
+    "version": "1.4.147",
     "description": "Orca - A screenshot tool with AI-powered analysis",
     "homepage": "https://github.com/stablyai/orca",
     "license": "MIT",
-    "url": "https://github.com/stablyai/orca/releases/download/v1.4.146/orca-windows-setup.exe",
-    "hash": "d8da772f10d38ccbe4b7e2b7a70fb2f000924f2444b8317e50acb9e700f2db26",
+    "url": "https://github.com/stablyai/orca/releases/download/v1.4.147/orca-windows-setup.exe",
+    "hash": "e7bc16b2310d72389f839e8349096522608fdf9c7df0f6c7824ad990a04ebe32",
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
