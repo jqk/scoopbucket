@@ -1,10 +1,10 @@
 {
-    "version": "0.1.30",
+    "version": "0.1.31",
     "description": "A modern, cross platform & open source IDE for .NET.",
     "homepage": "https://github.com/MattParkerDev/SharpIDE",
     "license": "MIT",
-    "url": "https://github.com/MattParkerDev/SharpIDE/releases/download/v0.1.30/sharpide-win-x64-0.1.30.zip",
-    "hash": "b2163bc7e3612c17c0e851abd37ce40f81090959f68fb1a948d45d12df85afb6",
+    "url": "https://github.com/MattParkerDev/SharpIDE/releases/download/v0.1.31/sharpide-win-x64-0.1.31.zip",
+    "hash": "52df9867bea276cb4a5915c9c48e01448ddcc31a4b2789b21d2a4dae8e2891d5",
     "bin": "SharpIDE.exe",
     "shortcuts": [
         [
