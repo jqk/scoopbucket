@@ -21,6 +21,10 @@
             "Codux"
         ]
     ],
+    "persist": [
+        "data",
+        "runtime-root/memory-workspaces"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
