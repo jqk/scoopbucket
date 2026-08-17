@@ -1,12 +1,12 @@
 {
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "MDR: 一款基于 Tauri v2 的轻量级 Markdown 编辑器，支持 WYSIWYG 所见即所得编辑、自动大纲、一键导出 Word 和 PDF。",
     "homepage": "https://gitee.com/tanzwwww/mdr",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitee.com/tanzwwww/mdr/releases/download/0.1.6/Markdown%20Reader_0.1.6_x64-setup.exe",
-            "hash": "sha256:728e08015186b04cc8b4598604265501027ecb88fd2a96b335d52e1bbdc2b428"
+            "url": "https://gitee.com/tanzwwww/mdr/releases/download/0.1.7/即阅MD_0.1.7_x64-setup.exe",
+            "hash": "bdc3f235bf4876c72ffa9ee7c821a4c0f677c9e8fb898b7381e68ac10e0ef44a"
         }
     },
     "installer": {
@@ -18,7 +18,7 @@
     "shortcuts": [
         [
             "app.exe",
-            "Markdown Reader"
+            "mdr"
         ]
     ],
     "checkver": {
@@ -28,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gitee.com/tanzwwww/mdr/releases/download/$version/Markdown%20Reader_$version_x64-setup.exe"
+                "url": "https://gitee.com/tanzwwww/mdr/releases/download/$version/即阅MD_$version_x64-setup.exe"
             }
         }
     }
