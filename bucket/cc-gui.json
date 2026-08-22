@@ -1,10 +1,10 @@
 {
-    "version": "0.9.1",
+    "version": "0.9.2",
     "description": "CC GUI Desktop - A desktop application for Claude Code",
     "homepage": "https://github.com/zhukunpenglinyutong/desktop-cc-gui",
     "license": "MIT",
-    "url": "https://github.com/zhukunpenglinyutong/desktop-cc-gui/releases/download/v0.9.1/ccgui_0.9.1_x64-setup.exe",
-    "hash": "f858c8b896082f1cd741f06bc5f27212d48f260d8596b9fc04e4b408b1e56787",
+    "url": "https://github.com/zhukunpenglinyutong/desktop-cc-gui/releases/download/v0.9.2/ccgui_0.9.2_x64-setup.exe",
+    "hash": "dcf73a10b4192feda036a66b187533aba9b34aacac2a26ee7400adcd91c72a02",
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
