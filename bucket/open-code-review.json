@@ -1,12 +1,12 @@
 {
-    "version": "1.11.5",
+    "version": "1.11.6",
     "description": "A hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset.",
     "homepage": "https://github.com/alibaba/open-code-review",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/alibaba/open-code-review/releases/download/v1.11.5/opencodereview-windows-amd64.exe",
-            "hash": "667164fc0d58f711dbb04c4aa4f7c601174d10bb25f4041f6626e69f7e0e420e"
+            "url": "https://github.com/alibaba/open-code-review/releases/download/v1.11.6/opencodereview-windows-amd64.exe",
+            "hash": "c2652bb4f70c8c3af38bf69656ab05f10c13cd9457da77bc374f41ab9c25de25"
         }
     },
     "bin": [
