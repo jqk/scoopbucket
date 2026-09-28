@@ -1,12 +1,12 @@
 {
-    "version": "2.0.2",
+    "version": "2.0.3",
     "description": "Agentic Development Environment based on OpenCode AI agent",
     "homepage": "https://github.com/openchamber/openchamber",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/openchamber/openchamber/releases/download/v2.0.2/OpenChamber-2.0.2-win-x64.exe",
-            "hash": "aac24c776c85542e35d9f654e97e4c23dde78b6231b66c20fb476fbd2884ea4c"
+            "url": "https://github.com/openchamber/openchamber/releases/download/v2.0.3/OpenChamber-2.0.3-win-x64.exe",
+            "hash": "651bda8bfbab56799a3c5ff9a1731d8a9736243c92c0fd47b0a9881793794508"
         }
     },
     "installer": {
