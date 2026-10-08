@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/shadow1ng/fscan",
     "description": "An intranet comprehensive scanning tool.",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "license": "Mit",
-    "url": "https://github.com/shadow1ng/fscan/releases/download/v2.2.1/fscan_2.2.1_windows_x64.exe",
-    "hash": "6ca24d63d6586edebd4086288bc52f07b49c1a6f7d51c44439d095e3af77986b",
+    "url": "https://github.com/shadow1ng/fscan/releases/download/v2.2.2/fscan_2.2.2_windows_x64.exe",
+    "hash": "34973a25a3d67077fccd687a46bf6ad737ecac7ea6133a5993915901f193114a",
     "bin": "fscan.exe",
     "shortcuts": [
         [
