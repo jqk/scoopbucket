@@ -1,10 +1,10 @@
 {
-    "version": "2026.9.24",
+    "version": "2026.10.13",
     "description": "Tolaria - A refactoring tool",
     "homepage": "https://github.com/refactoringhq/tolaria",
     "license": "MIT",
-    "url": "https://github.com/refactoringhq/tolaria/releases/download/v2026-09-24/Tolaria_2026.9.24_x64-setup.exe",
-    "hash": "bd2ca83291c1ddaee1dbd335de631a5627ac2f8b651cc8c077c950b6e739054b",
+    "url": "https://github.com/refactoringhq/tolaria/releases/download/v2026-10-13/Tolaria_2026.10.13_x64-setup.exe",
+    "hash": "3f977a7eb750a37df3a83df1beb34592c9e13cd7816adb228dd81213ad9a84a7",
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
