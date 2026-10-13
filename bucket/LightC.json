@@ -1,10 +1,10 @@
 {
-    "version": "2.16.15",
+    "version": "2.16.16",
     "description": "A lightweight and refined AI code assistant",
     "homepage": "https://github.com/Chunyu33/light-c",
     "license": "MIT",
-    "url": "https://github.com/Chunyu33/light-c/releases/download/v2.16.15/LightC_2.16.15_x64-setup.exe",
-    "hash": "16af8530f494b0610187d1458b6bd5774edee22ec6110a504e524d4e0d89276b",
+    "url": "https://github.com/Chunyu33/light-c/releases/download/v2.16.16/LightC_2.16.16_x64-setup.exe",
+    "hash": "e6f8adebe9bacd03dd67e30c747f4c38def91f5fb7c3998dad7259967da0cc62",
     "installer": {
         "script": [
             "Expand-7zipArchive -Path \"$dir\\$fname\" -Removal",
