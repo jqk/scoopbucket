@@ -1,9 +1,9 @@
 {
-    "version": "0.7.5",
+    "version": "0.7.6",
     "description": "Add proxy for github downloading link in scoop manifest",
     "homepage": "https://github.com/jqk/scoop-gh-proxy",
-    "url": "https://github.com/jqk/scoop-gh-proxy/releases/download/v0.7.5/scoop-gh-0.7.5-amd64.zip",
-    "hash": "e763dc25ce1c5c5a6863669e1273ab257f7434efcd759ca7707990d1f6f90be5",
+    "url": "https://github.com/jqk/scoop-gh-proxy/releases/download/v0.7.6/scoop-gh-0.7.6-amd64.zip",
+    "hash": "b637d23b4589a90d2b656f3aeb527081aa7b894203c06b262ae64cb513954c4e",
     "bin": "scoop-gh.exe",
     "checkver": "github",
     "autoupdate": {
