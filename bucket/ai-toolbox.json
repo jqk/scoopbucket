@@ -1,10 +1,10 @@
 {
-    "version": "1.1.9",
+    "version": "1.2.0",
     "description": "AI 工具箱：集中管理 Claude Code、Codex、OpenCode、Gemini CLI、Grok CLI 等 AI 编程助手的配置，包括供应商、提示词、MCP 服务器、技能、会话及本地代理网关。基于 Tauri 构建，数据本地 SQLite 存储。",
     "homepage": "https://github.com/coulsontl/ai-toolbox",
     "license": "AGPL-3.0",
-    "url": "https://github.com/coulsontl/ai-toolbox/releases/download/v1.1.9/AI.Toolbox_1.1.9_x64-setup.exe#/dl.exe",
-    "hash": "0879eafa92d9a5631060b9eda6ad329ba85ea3aa512748baa8e2d5224044afd2",
+    "url": "https://github.com/coulsontl/ai-toolbox/releases/download/v1.2.0/AI.Toolbox_1.2.0_x64-setup.exe#/dl.exe",
+    "hash": "76a3e8e1057c26a8a3ec759065831323c2636a9e14ff233219b80c2f02006d77",
     "installer": {
         "script": [
             "# Tauri NSIS installer (currentUser). /S = silent, /D = install dir.",
