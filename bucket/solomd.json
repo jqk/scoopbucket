@@ -1,12 +1,12 @@
 {
-    "version": "5.0.3",
+    "version": "5.0.4",
     "description": "A markdown editor — and the bridge to your LLM. Local-first, MIT, ~15 MB. Bundled MCP server lets Claude Code / Codex / Cursor drive your vault directly. 14 AI providers BYOK.",
     "homepage": "https://github.com/zhitongblog/solomd",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.0.3/SoloMD_5.0.3_x64-portable.zip",
-            "hash": "9842bf01bd54b5da216251d1199c9dca8b3af14c61a60fee9094789a62fb876d"
+            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.0.4/SoloMD_5.0.4_x64-portable.zip",
+            "hash": "6b3ed0946e384cb91a01eed3cc35bc2bfba95623fb1e244d4399d00da2964d0a"
         }
     },
     "bin": "SoloMD.exe",
