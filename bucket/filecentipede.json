@@ -1,5 +1,5 @@
 {
-    "version": "2.82.0",
+    "version": "2.9",
     "description": "An internet file download manager",
     "homepage": "https://github.com/filecxx/FileCentipede",
     "license": "Unknown",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/filecxx/FileCentipede/releases/download/v2.82.0/filecxx_2.82_win_x64.zip",
-            "hash": "f0bdef157f45ae1652ede116ebe98d889d163e5c094e88a076e917989742fe1e"
+            "url": "https://github.com/filecxx/FileCentipede/releases/download/2.9/filecxx_2.9_win_x64.zip",
+            "hash": "846d39d47ac0ebf3635076ca82d28f65fc1e6d5645d7fcb8d8b743e4b1a82465"
         }
     },
     "bin": [
@@ -56,7 +56,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/filecxx/FileCentipede/releases/download/v$version/filecxx_$majorVersion.$minorVersion_win_x64.zip"
+                "url": "https://github.com/filecxx/FileCentipede/releases/download/$version/filecxx_$majorVersion.$minorVersion_win_x64.zip"
             }
         }
     }
