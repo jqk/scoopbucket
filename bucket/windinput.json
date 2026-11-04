@@ -1,11 +1,11 @@
 {
-    "version": "0.129.0",
+    "version": "0.130.0",
     "description": "清风输入法，Rust + TSF 的开源中文输入法，支持五笔86/全拼/双拼、辅助码与表情 | Open-source Chinese IME for Windows built on Rust + TSF",
     "homepage": "https://github.com/huanfeng/WindInput",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/huanfeng/WindInput/releases/download/v0.129.0/WindInput-Portable-0.129.0.zip",
-    "hash": "6163c84bfa9045bc13a44736d89ed69e571328e55922d72232a5d120345520f6",
-    "extract_dir": "WindInput-0.129.0",
+    "url": "https://github.com/huanfeng/WindInput/releases/download/v0.130.0/WindInput-Portable-0.130.0.zip",
+    "hash": "c06c5bd1fd06daba11e20830a2a09c99bedc8d559c74d270d7969676ad325c42",
+    "extract_dir": "WindInput-0.130.0",
     "bin": "wind_portable.exe",
     "shortcuts": [
         [
