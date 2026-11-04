@@ -18,12 +18,21 @@
             "Write-Host 'Running MetasequoiaIME installer (confirm the UAC prompt)...' -f Cyan",
             "$proc = Start-Process -FilePath \"$dir\\$fname\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', \"/DATADIR=`\"$persist_dir\\data`\"\") -Wait -PassThru",
             "if ($proc.ExitCode -notin @(0, 1641, 3010)) { throw \"Installer exited with code $($proc.ExitCode).\" }",
-            "Remove-Item \"$dir\\$fname\" -Force -ErrorAction SilentlyContinue"
+            "$gone = -not (Test-Path \"$dir\\$fname\")",
+            "for ($i = 0; $i -lt 3 -and -not $gone; $i++) {",
+            "    Remove-Item \"$dir\\$fname\" -Force -ErrorAction SilentlyContinue",
+            "    $gone = -not (Test-Path \"$dir\\$fname\")",
+            "    if (-not $gone) { Start-Sleep 2 }",
+            "}",
+            "if (-not $gone) { Write-Host \"Could not delete installer '$fname' (locked by antivirus?); it will be removed with this version directory on cleanup.\" -f Yellow }"
         ]
     },
     "post_install": [
         "try { Start-Process \"$env:ProgramFiles\\metasequoiaime\\server\\MetasequoiaImeServer.exe\" } catch { }",
         "try { Start-Process \"$env:ProgramFiles\\metasequoiaime\\server\\MetasequoiaImeWatchdog.exe\" } catch { }"
+    ],
+    "pre_uninstall": [
+        "Remove-Item \"$dir\\MetasequoiaIME_Setup_*.exe\" -Force -ErrorAction SilentlyContinue"
     ],
     "uninstaller": {
         "script": [
