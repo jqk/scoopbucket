@@ -1,10 +1,10 @@
 {
-    "version": "17.3",
+    "version": "17.3.1",
     "description": "Jailer is a tool for database subsetting and relational data browsing.",
     "homepage": "https://github.com/Wisser/Jailer",
     "license": "Apache-2.0",
-    "url": "https://github.com/Wisser/Jailer/releases/download/v17.3/Jailer-database-tools-17.3.msi",
-    "hash": "1e5b0df884972b36d424060a625800d6c3ced756a225f8cdf0f30e6f2f5818d3",
+    "url": "https://github.com/Wisser/Jailer/releases/download/v17.3.1/Jailer-database-tools-17.3.1.msi",
+    "hash": "6bc01ef89d22a937d5847e8483b9502fc1b417886e247a011f31f5c2ad6570e7",
     "bin": "Jailer Database Tools\\Jailer Database Tools.exe",
     "shortcuts": [
         [
