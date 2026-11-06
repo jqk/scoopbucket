@@ -1,10 +1,10 @@
 {
-    "version": "4.4.7",
+    "version": "4.5.0",
     "description": "Ghost Downloader 3. A powerful all-in-one downloader supporting HTTP, FTP, BitTorrent, ed2k and more.",
     "homepage": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
     "license": "GPL-3.0",
-    "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.4.7/Ghost-Downloader-v4.4.7-Windows-x86_64.zip",
-    "hash": "808bef65efa7a984e2651f13ed138d16e685fa10ae2ea092bc49483093f4c296",
+    "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.5.0/Ghost-Downloader-v4.5.0-Windows-x86_64.zip",
+    "hash": "418e48bf89d73bd5d5d890e5ecdf5190c3b43b623156a3cfbac9ac66ac45eef4",
     "bin": "Ghost-Downloader-3.exe",
     "shortcuts": [
         [
