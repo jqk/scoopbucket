@@ -1,7 +1,7 @@
 {
     "version": "1.6.0",
     "description": "Pretty fancy and modern terminal file manager.",
-    "homepage": "https://github.com/yorukot/superfile",
+    "homepage": "https://superfile.dev",
     "license": "MIT",
     "architecture": {
         "64bit": {
