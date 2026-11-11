@@ -1,14 +1,14 @@
 {
-    "version": "9.9.1",
+    "version": "8.14.7",
     "description": "An open-source build automation tool focused on flexibility and performance. (Binaries only without documentation)",
     "homepage": "https://gradle.org",
     "license": "Apache-2.0",
     "suggest": {
         "JDK": "java/openjdk"
     },
-    "url": "https://services.gradle.org/distributions/gradle-9.9.1-bin.zip",
-    "hash": "d8a18a7a841dd5df825d35a685fad6f2d7f12ac0c280e57b67c27b4a520ba228",
-    "extract_dir": "gradle-9.9.1",
+    "url": "https://services.gradle.org/distributions/gradle-8.14.7-bin.zip",
+    "hash": "903bfc4bc7622323124054c10f509246212a1902948bdaf26c379cca8735e856",
+    "extract_dir": "gradle-8.14.7",
     "post_install": [
         "$current_env = [System.Environment]::GetEnvironmentVariable('GRADLE_USER_HOME', 'User')",
         "If ($null -eq $current_env) {",
