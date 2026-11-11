@@ -1,10 +1,10 @@
 {
-    "version": "0.1.41",
+    "version": "0.1.42",
     "description": "IntelliJ IDEA–style IDE rebuilt in Rust: editor, code insight, debugger, Git, terminal, database and HTTP clients in a fast native app",
     "homepage": "https://github.com/l0ng-ai/openidea",
     "license": "Apache-2.0",
-    "url": "https://github.com/l0ng-ai/openidea/releases/download/v0.1.41/OpenIDEA_0.1.41_x64-setup.exe",
-    "hash": "1526bf73f6f180804063bb1b3115ec2493a6ed6e41e15f31aba4300cad6ebd5f",
+    "url": "https://github.com/l0ng-ai/openidea/releases/download/v0.1.42/OpenIDEA_0.1.42_x64-setup.exe",
+    "hash": "da65f0ee57418f985a68223d6363fb73bb99d6ebdeb57462d35b8f5e9d65e60b",
     "pre_install": [
         "$setup = (Get-Item \"$dir\\*-setup.exe\").FullName",
         "Expand-7zipArchive -Path $setup -DestinationPath \"$dir\" -Removal"
