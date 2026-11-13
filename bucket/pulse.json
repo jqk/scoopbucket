@@ -1,0 +1,55 @@
+{
+    "version": "1.0.60",
+    "description": "A modern file manager for Windows that makes browsing, searching and organizing files easier.",
+    "homepage": "https://github.com/jimmgreen/pulse",
+    "license": "Apache-2.0",
+    "depends": "7zip",
+    "url": "https://github.com/jimmgreen/pulse/releases/download/v1.0.60/PulseSetup-1.0.60.exe",
+    "hash": "827aebcb14a9e4f4ec8281cf89e339cc887ec6f541ff6e80518ac463732c5234",
+    "pre_install": [
+        "$setup = (Get-Item \"$dir\\PulseSetup-*.exe\").FullName",
+        "7z x -y \"-o$dir\\_ppkm\" \"$setup\" | Out-Null",
+        "Remove-Item $setup -Force",
+        "$p = (Get-Item \"$dir\\_ppkm\\*\").FullName",
+        "$b = [IO.File]::ReadAllBytes($p)",
+        "$depth = 0; $instr = $false; $end = -1",
+        "for ($i = 8; $i -lt $b.Length; $i++) { $c = [char]$b[$i]; if ($instr) { if ($c -eq '\"') { $instr = $false } elseif ($c -eq '\\') { $i++ } } elseif ($c -eq '\"') { $instr = $true } elseif ($c -eq '{') { $depth++ } elseif ($c -eq '}') { $depth--; if ($depth -eq 0) { $end = $i; break } } }",
+        "if ($end -lt 0) { throw 'PPKM manifest not found in payload' }",
+        "$files = ([Text.Encoding]::UTF8.GetString($b, 8, $end - 7) | ConvertFrom-Json).files",
+        "$off = $end + 1",
+        "foreach ($f in $files) { $dest = Join-Path $dir ($f.path -replace '/', '\\'); $dd = Split-Path $dest -Parent; if (-not (Test-Path $dd)) { New-Item -ItemType Directory -Path $dd -Force | Out-Null }; $fs = [IO.File]::Create($dest); $fs.Write($b, $off, $f.size); $fs.Close(); $off += $f.size }",
+        "Remove-Item \"$dir\\_ppkm\" -Recurse -Force"
+    ],
+    "post_install": [
+        "# Pulse's launcher walks the whole ancestor chain from the drive root and rejects any junction/reparse point (ERROR_NOT_SUPPORTED, exit 50), so retarget the shim and shortcut to the real version directory that scoop's 'current' link points at.",
+        "$real = Join-Path (Split-Path $dir) $version",
+        "$shim = Join-Path (shimdir $global) \"$app.shim\"",
+        "if ((Test-Path $shim) -and (Test-Path \"$real\\pulse.exe\")) { (Get-Content $shim) | ForEach-Object { $_.Replace($dir, $real) } | Set-Content $shim -Encoding Ascii }",
+        "$lnkFile = Join-Path (shortcut_folder $global) 'Pulse.lnk'",
+        "if (Test-Path $lnkFile) { $ws = New-Object -ComObject WScript.Shell; $lnk = $ws.CreateShortcut($lnkFile); $lnk.TargetPath = \"$real\\pulse.exe\"; $lnk.WorkingDirectory = $real; $lnk.Save() }"
+    ],
+    "bin": "pulse.exe",
+    "shortcuts": [
+        [
+            "pulse.exe",
+            "Pulse"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/jimmgreen/pulse/releases/latest/download/update-manifest.json",
+        "regex": "\"version\"\\s*:\\s*\"([\\d.]+)\""
+    },
+    "autoupdate": {
+        "url": "https://github.com/jimmgreen/pulse/releases/download/v$version/PulseSetup-$version.exe",
+        "hash": {
+            "url": "https://github.com/jimmgreen/pulse/releases/download/v$version/update-manifest.json",
+            "regex": "\"installer_sha256\"\\s*:\\s*\"([a-fA-F0-9]{64})\""
+        }
+    },
+    "notes": [
+        "Upstream only ships a custom self-extracting installer (PE stub + xz payload with a PPKM file manifest). pre_install unpacks the embedded payload with 7-Zip and extracts all program files by the manifest - the installer itself never runs, so no UAC, no registry writes and no shell/COM integration (those are optional and can be enabled inside the app).",
+        "Versioned payload layout: launcher pulse.exe reads dialog-current.json and starts the real binaries under DialogBridge/<hash>/. Enhancement packs (preview, ffmpeg, raw, AI) are downloaded and managed inside the app, outside the install directory.",
+        "Pulse rejects junction/symlink directories anywhere in its path chain, so post_install repoints the shim and Start Menu shortcut from scoop's 'current' junction to the real version directory; scoop recreates them on every update and post_install fixes them again.",
+        "Consider disabling in-app auto-update and using 'scoop update pulse' instead, so the scoop-managed directory stays consistent."
+    ]
+}
