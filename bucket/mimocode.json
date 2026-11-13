@@ -1,10 +1,10 @@
 {
-    "version": "0.1.16",
+    "version": "0.1.17",
     "description": "A lightweight and refined AI code assistant",
     "homepage": "https://github.com/XiaomiMiMo/MiMo-Code",
     "license": "MIT",
-    "url": "https://github.com/XiaomiMiMo/MiMo-Code/releases/download/v0.1.16/mimocode-windows-x64.zip",
-    "hash": "cebf70eb32877db4aef0e27f9194aca0147506dc2ada1d05c6547c0c90d604d1",
+    "url": "https://github.com/XiaomiMiMo/MiMo-Code/releases/download/v0.1.17/mimocode-windows-x64.zip",
+    "hash": "0592e55bd48b1441227a00a8bbf5f5a967023d3e01960b799c59ca50abfcda4d",
     "bin": "mimo.exe",
     "shortcuts": [
         [
