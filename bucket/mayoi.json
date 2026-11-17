@@ -1,16 +1,16 @@
 {
-    "version": "0.22.1",
+    "version": "0.22.2",
     "description": "A small, fast code editor written in Go, drawing a native GPU UI with no webview and no Electron.",
     "homepage": "https://github.com/sorrycc/Mayoi",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.22.1/mayoi-0.22.1-windows-amd64.tar.gz",
-            "hash": "eb89ded88de61c7f2c13d3c84001539ff8e3490cbe6acec72d2456c8d6bbf63b"
+            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.22.2/mayoi-0.22.2-windows-amd64.tar.gz",
+            "hash": "c6f3d749d9ed5301d1071fb0720a048d782e06d14a860277feea348dd34b755a"
         },
         "arm64": {
-            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.22.1/mayoi-0.22.1-windows-arm64.tar.gz",
-            "hash": "20d16da43e79320f3d13f2a1d46da147dfe5e8ff4e1accc488046c37478d5fa5"
+            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.22.2/mayoi-0.22.2-windows-arm64.tar.gz",
+            "hash": "4d5fc1fd3c017b07298390b2d2fe2a300f3d90b9f944dd41715bd2fa5922b022"
         }
     },
     "bin": "Mayoi.exe",
