@@ -3,8 +3,16 @@
     "description": "A vedio downloader for XHS.",
     "homepage": "https://github.com/JoeanAmier/XHS-Downloader",
     "license": "Apache-2.0",
-    "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/2.8/XHS-Downloader_V2.8_Windows_X64.zip",
-    "hash": "53b1234e7b44f01d95912eb1d6a74473c7ffbdbc9e39d13da15623574cf66028",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/2.8/XHS-Downloader_V2.8_Windows_X64.zip",
+            "hash": "53b1234e7b44f01d95912eb1d6a74473c7ffbdbc9e39d13da15623574cf66028"
+        },
+        "arm64": {
+            "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/2.8/XHS-Downloader_V2.8_Windows_ARM64.zip",
+            "hash": "386b6382889d819b8be7e00d2cdd0c245ab26b30721e61c1155fa1a847bb117f"
+        }
+    },
     "bin": "main.exe",
     "shortcuts": [
         [
@@ -14,6 +22,13 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/$version/XHS-Downloader_V$version_Windows_X64.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/$version/XHS-Downloader_V$version_Windows_X64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/JoeanAmier/XHS-Downloader/releases/download/$version/XHS-Downloader_V$version_Windows_ARM64.zip"
+            }
+        }
     }
 }

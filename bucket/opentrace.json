@@ -3,8 +3,16 @@
     "description": "A multi-platform GUI for nexttrace.",
     "homepage": "https://github.com/Archeb/opentrace",
     "license": "GPLv3",
-    "url": "https://github.com/Archeb/opentrace/releases/download/v1.5.2/win-x64.zip",
-    "hash": "d1ce0bd98755793749c48c26191baf1deefb2001c1f0599f9d3eb9b90cc98152",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Archeb/opentrace/releases/download/v1.5.2/win-x64.zip",
+            "hash": "d1ce0bd98755793749c48c26191baf1deefb2001c1f0599f9d3eb9b90cc98152"
+        },
+        "arm64": {
+            "url": "https://github.com/Archeb/opentrace/releases/download/v1.5.2/win-arm64.zip",
+            "hash": "40b53763f7213ac46afe26dd01230cdf4186116ca12ceff1ba518f1fe8c46f42"
+        }
+    },
     "bin": "opentrace.exe",
     "shortcuts": [
         [
@@ -14,6 +22,13 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Archeb/opentrace/releases/download/v$version/win-x64.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Archeb/opentrace/releases/download/v$version/win-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/Archeb/opentrace/releases/download/v$version/win-arm64.zip"
+            }
+        }
     }
 }

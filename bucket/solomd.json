@@ -7,6 +7,10 @@
         "64bit": {
             "url": "https://github.com/zhitongblog/solomd/releases/download/v5.2.2/SoloMD_5.2.2_x64-portable.zip",
             "hash": "f5eeb0e05f6615dab019fe850e4709237bab3f3f66af9fda4cf26c038db666ef"
+        },
+        "arm64": {
+            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.2.2/SoloMD_5.2.2_arm64-portable.zip",
+            "hash": "678e83443e6f59aeee795e926b4eb5bb2b4a1f6decde6d81611e0e291199ccbc"
         }
     },
     "bin": "SoloMD.exe",
@@ -21,6 +25,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/zhitongblog/solomd/releases/download/v$version/SoloMD_$version_x64-portable.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/zhitongblog/solomd/releases/download/v$version/SoloMD_$version_arm64-portable.zip"
             }
         }
     },

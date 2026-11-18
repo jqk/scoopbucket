@@ -6,8 +6,16 @@
         "identifier": "MIT",
         "url": "https://github.com/owu/wsl-dashboard/blob/master/LICENSE"
     },
-    "url": "https://github.com/owu/wsl-dashboard/releases/download/v0.13.0/wsldashboard.0.13.0.portable.x64.zip",
-    "hash": "804f7f047f723031124c87765c659fabcba9784a5874e170746935984ee5d19d",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/owu/wsl-dashboard/releases/download/v0.13.0/wsldashboard.0.13.0.portable.x64.zip",
+            "hash": "804f7f047f723031124c87765c659fabcba9784a5874e170746935984ee5d19d"
+        },
+        "arm64": {
+            "url": "https://github.com/owu/wsl-dashboard/releases/download/v0.13.0/wsldashboard.0.13.0.portable.arm64.zip",
+            "hash": "0060945befdf122a6ae383667758f1478bbbc0659efff6324e8158dca3d31f0e"
+        }
+    },
     "pre_install": "Get-ChildItem \"$dir\\wsldashboard.*.exe\" | Rename-Item -NewName \"wsldashboard.exe\"",
     "bin": "wsldashboard.exe",
     "shortcuts": [
@@ -18,6 +26,13 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/owu/wsl-dashboard/releases/download/v$version/wsldashboard.$version.portable.x64.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/owu/wsl-dashboard/releases/download/v$version/wsldashboard.$version.portable.x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/owu/wsl-dashboard/releases/download/v$version/wsldashboard.$version.portable.arm64.zip"
+            }
+        }
     }
 }

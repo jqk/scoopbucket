@@ -7,6 +7,10 @@
         "64bit": {
             "url": "https://github.com/szdytom/markview/releases/download/v0.5.2/markview-x86_64-pc-windows-msvc.zip",
             "hash": "6aba07580677bd529024849164d65b7eeb5e756a082cf5777cf53a73861b919a"
+        },
+        "arm64": {
+            "url": "https://github.com/szdytom/markview/releases/download/v0.5.2/markview-aarch64-pc-windows-msvc.zip",
+            "hash": "e9e6115e801950a79ea6e1cb536826591bcbda645b4add9ca7eb2e410338727a"
         }
     },
     "bin": "markview.exe",
@@ -24,6 +28,13 @@
                 "hash": {
                     "url": "https://api.github.com/repos/szdytom/markview/releases/latest",
                     "regex": "(?s)markview-x86_64-pc-windows-msvc\\.zip\"[\\s\\S]*?\"digest\"\\s*:\\s*\"sha256:([a-f0-9]{64})"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/szdytom/markview/releases/download/v$version/markview-aarch64-pc-windows-msvc.zip",
+                "hash": {
+                    "url": "https://api.github.com/repos/szdytom/markview/releases/latest",
+                    "regex": "(?s)markview-aarch64-pc-windows-msvc\\.zip\"[\\s\\S]*?\"digest\"\\s*:\\s*\"sha256:([a-f0-9]{64})"
                 }
             }
         }

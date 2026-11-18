@@ -3,8 +3,16 @@
     "description": "Instant file search integration for the Windows taskbar powered by Everything.",
     "homepage": "https://github.com/srwi/EverythingToolbar",
     "license": "MIT",
-    "url": "https://github.com/srwi/EverythingToolbar/releases/download/3.5.0/EverythingToolbar-3.5.0-x64.exe",
-    "hash": "5443ed74370bc1c5c269f4dd1c6b15babdaf08bdc55514f47002c82f720fd6d5",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/srwi/EverythingToolbar/releases/download/3.5.0/EverythingToolbar-3.5.0-x64.exe",
+            "hash": "5443ed74370bc1c5c269f4dd1c6b15babdaf08bdc55514f47002c82f720fd6d5"
+        },
+        "arm64": {
+            "url": "https://github.com/srwi/EverythingToolbar/releases/download/3.5.0/EverythingToolbar-3.5.0-arm64.exe",
+            "hash": "ecde5b4833c11d02e08aaf37ea9adbf35c2622c5156a51ce59a97fad4f59b9f3"
+        }
+    },
     "bin": "EverythingToolbar\\EverythingToolbar.Launcher.exe",
     "shortcuts": [
         [
@@ -14,9 +22,13 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version-x64.exe",
-        "hash": {
-            "url": "$baseurl/EverythingToolbar-$version-x64.sha256"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version-x64.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version-arm64.exe"
+            }
         }
     }
 }

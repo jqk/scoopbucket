@@ -3,8 +3,16 @@
     "description": "Ghost Downloader 3. A powerful all-in-one downloader supporting HTTP, FTP, BitTorrent, ed2k and more.",
     "homepage": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
     "license": "GPL-3.0",
-    "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.5.7/Ghost-Downloader-v4.5.7-Windows-x86_64.zip",
-    "hash": "c9cacd65ad40ee6dd4d45338b34dec5beb3d292d9019937c7f19f6b21842c4e7",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.5.7/Ghost-Downloader-v4.5.7-Windows-x86_64.zip",
+            "hash": "c9cacd65ad40ee6dd4d45338b34dec5beb3d292d9019937c7f19f6b21842c4e7"
+        },
+        "arm64": {
+            "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v4.5.7/Ghost-Downloader-v4.5.7-Windows-arm64.zip",
+            "hash": "2e086d67be970ba828126588404319627b14678f9818d98919eb8116c287394a"
+        }
+    },
     "bin": "Ghost-Downloader-3.exe",
     "shortcuts": [
         [
@@ -14,7 +22,14 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v$version/Ghost-Downloader-v$version-Windows-x86_64.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v$version/Ghost-Downloader-v$version-Windows-x86_64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3/releases/download/v$version/Ghost-Downloader-v$version-Windows-arm64.zip"
+            }
+        }
     },
     "notes": "Requires a CPU with AVX instruction set support (Qt 6.6+ requirement)."
 }
