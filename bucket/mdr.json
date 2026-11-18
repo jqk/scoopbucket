@@ -1,6 +1,6 @@
 {
     "version": "0.1.12",
-    "description": "MDR: 一款基于 Tauri v2 的轻量级 Markdown 编辑器，支持 WYSIWYG 所见即所得编辑、自动大纲、一键导出 Word 和 PDF。",
+    "description": "MDR: a lightweight Markdown editor built on Tauri v2, with WYSIWYG editing, automatic outline, and one-click export to Word and PDF.",
     "homepage": "https://gitee.com/tanzwwww/mdr",
     "license": "GPL-3.0",
     "architecture": {

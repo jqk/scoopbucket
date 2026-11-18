@@ -1,6 +1,6 @@
 {
     "version": "1.2.3",
-    "description": "AI 工具箱：集中管理 Claude Code、Codex、OpenCode、Gemini CLI、Grok CLI 等 AI 编程助手的配置，包括供应商、提示词、MCP 服务器、技能、会话及本地代理网关。基于 Tauri 构建，数据本地 SQLite 存储。",
+    "description": "AI toolbox for centrally managing the configuration of AI coding assistants such as Claude Code, Codex, OpenCode, Gemini CLI, and Grok CLI, including providers, prompts, MCP servers, skills, sessions, and a local proxy gateway. Built with Tauri; data is stored locally in SQLite.",
     "homepage": "https://github.com/coulsontl/ai-toolbox",
     "license": "AGPL-3.0",
     "url": "https://github.com/coulsontl/ai-toolbox/releases/download/v1.2.3/AI.Toolbox_1.2.3_x64-setup.exe#/dl.exe",

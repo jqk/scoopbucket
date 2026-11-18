@@ -1,14 +1,14 @@
 {
     "version": "0.14.1",
-    "description": "水杉输入法，基于 TSF 的开源中文输入法，支持全拼/双拼/五笔、辅助码与 AI 联想 | Open-source Chinese IME for Windows 10/11 built on TSF",
+    "description": "Metasequoia IME, an open-source Chinese IME for Windows 10/11 built on TSF, supporting full pinyin / double pinyin / Wubi, auxiliary codes, and AI-powered suggestions",
     "homepage": "https://github.com/metasequoiaime/MSIME-Windows",
     "license": "GPL-3.0-only",
     "notes": [
-        "安装与卸载时会弹出 UAC 提权确认（官方 Inno Setup 安装器需要管理员权限）。",
-        "需要 Visual C++ 2015-2022 Redistributable (x64) 14.40 及以上（可装 nonportable/vcredist2022），缺失时输入法进程会静默闪退。",
-        "程序装在 Program Files\\metasequoiaime，TSF DLL 装在 System32\\IME\\MetasequoiaIME（uiAccess 与游戏 Trusted Mode 的硬性要求）；词库、配置、皮肤数据 persist 在 persist\\msime\\data。",
-        "安装后用 Win+空格 切换到「水杉输入法」；设置入口在开始菜单「Metasequoia IME 水杉输入法」。",
-        "scoop uninstall 会随官方卸载器一并删除数据目录，需要保留请先备份 persist\\msime\\data。"
+        "Install and uninstall pop a UAC elevation prompt (the official Inno Setup installer requires admin privileges).",
+        "Requires Visual C++ 2015-2022 Redistributable (x64) 14.40 or later (install nonportable/vcredist2022); without it the IME process silently crashes on startup.",
+        "The program installs to Program Files\\metasequoiaime and the TSF DLL to System32\\IME\\MetasequoiaIME (hard requirements for uiAccess and game Trusted Mode); dictionaries, config, and skin data persist in persist\\msime\\data.",
+        "After install, switch to 'Metasequoia IME' with Win+Space; settings are reachable from the Start Menu entry 'Metasequoia IME'.",
+        "scoop uninstall removes the data directory along with the official uninstaller; back up persist\\msime\\data first if you want to keep it."
     ],
     "url": "https://github.com/metasequoiaime/msime-windows/releases/download/v0.14.1/MetasequoiaIME_Setup_v0.14.1.exe",
     "hash": "df094fd41f838d457f3461d231cd7dbc1a75de29dad535a809c28cd2121aa20f",
