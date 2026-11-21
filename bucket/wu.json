@@ -1,11 +1,11 @@
 {
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "Fast, native code editor and agent workspace. A Zed fork with coding agents built in.",
     "homepage": "https://github.com/dstrml/wu",
     "license": "GPL-3.0-or-later",
     "notes": "Please manually disable Wu's auto-update feature in the settings to prevent the updater from installing the program in unintended locations.",
-    "url": "https://github.com/dstrml/wu/releases/download/v1.3.0/Wu-x86_64.exe",
-    "hash": "8194e6c9ddfa75ee6f63dcb2be04e83c43c1cbb2e62f7a77fd4d0a5b4b9d307e",
+    "url": "https://github.com/dstrml/wu/releases/download/v1.4.0/Wu-x86_64.exe",
+    "hash": "9d3a570165273bfeb5add53d63edc5b55031901f38bb6135354951da1962edef",
     "installer": {
         "script": [
             "Expand-InnoArchive -Path \"$dir\\$fname\" -ExtractDir '{app}'",
