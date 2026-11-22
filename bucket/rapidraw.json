@@ -1,16 +1,16 @@
 {
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "An AI-powered RAW image editor with depth masking and inpainting",
     "homepage": "https://github.com/CyberTimon/RapidRAW",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CyberTimon/RapidRAW/releases/download/v1.7.0/01_RapidRAW_v1.7.0_windows_x64.exe",
-            "hash": "ad8dce5e3ad2cb8a710bd7cc30dcf99a0445648fceb20e56e343ed194c3541d0"
+            "url": "https://github.com/CyberTimon/RapidRAW/releases/download/v1.7.1/01_RapidRAW_v1.7.1_windows_x64.exe",
+            "hash": "a1660932f418615d492a58cb7780279a6efb12ad78027455a68f98c80116e082"
         },
         "arm64": {
-            "url": "https://github.com/CyberTimon/RapidRAW/releases/download/v1.7.0/01_RapidRAW_v1.7.0_windows-11-arm_arm64.exe",
-            "hash": "dfa27c2fea6e08b6ba344d7e22b9bb0f65b1dd6fd74be0601136cbc62a0ea1cc"
+            "url": "https://github.com/CyberTimon/RapidRAW/releases/download/v1.7.1/01_RapidRAW_v1.7.1_windows-11-arm_arm64.exe",
+            "hash": "562c0e9313f24b5cea63c60eb5577247cca1c2992478057063fabeef0b8bdadc"
         }
     },
     "installer": {
