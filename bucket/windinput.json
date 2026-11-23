@@ -1,11 +1,11 @@
 {
-    "version": "0.132.0",
+    "version": "0.133.0",
     "description": "WindInput, an open-source Chinese IME for Windows built on Rust + TSF, supporting Wubi 86 / full pinyin / double pinyin, auxiliary codes, and emoji",
     "homepage": "https://github.com/huanfeng/WindInput",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/huanfeng/WindInput/releases/download/v0.132.0/WindInput-Portable-0.132.0.zip",
-    "hash": "78ceaec4c58f4fcd37ab115d5e4374f754aa7adc0675555edfe6aac9a1b8984c",
-    "extract_dir": "WindInput-0.132.0",
+    "url": "https://github.com/huanfeng/WindInput/releases/download/v0.133.0/WindInput-Portable-0.133.0.zip",
+    "hash": "61489d613ed98cf431879bad5288fd938828dd8122eff412a6c66498f27012c7",
+    "extract_dir": "WindInput-0.133.0",
     "bin": "wind_portable.exe",
     "shortcuts": [
         [
