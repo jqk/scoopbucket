@@ -1,16 +1,16 @@
 {
-    "version": "0.1.52",
+    "version": "0.1.51",
     "description": "IntelliJ IDEA–style IDE rebuilt in Rust: editor, code insight, debugger, Git, terminal, database and HTTP clients in a fast native app",
     "homepage": "https://github.com/l0ng-ai/openidea",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/l0ng-ai/openidea/releases/download/v0.1.52/OpenIDEA_0.1.52_x64-setup.exe",
-            "hash": "bac4c4e575afa47f72f2b5ce5ad6ad2b7101dedb69a270305741b353cbbec345"
+            "url": "https://github.com/l0ng-ai/openidea/releases/download/v0.1.51/OpenIDEA_0.1.51_x64-setup.exe",
+            "hash": "df6fdecf65e23e28a055819b95cd3b0f413b7f000905771dd166f72d8f09c6e2"
         },
         "arm64": {
-            "url": "https://github.com/l0ng-ai/openidea/releases/download/v0.1.52/OpenIDEA_0.1.52_arm64-setup.exe",
-            "hash": "5afd7cb1e63b3ab92df035c01d12aba353d44e0ef519d2a828452836fad11ad2"
+            "url": "https://github.com/l0ng-ai/openidea/releases/download/v0.1.51/OpenIDEA_0.1.51_arm64-setup.exe",
+            "hash": "d50853845f853c03794f99b0ae23dd8e0ef85d7e74c7cc937d4175276b1caddb"
         }
     },
     "pre_install": [
