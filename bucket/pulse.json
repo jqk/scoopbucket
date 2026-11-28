@@ -1,11 +1,11 @@
 {
-    "version": "1.0.60",
+    "version": "1.0.62",
     "description": "A modern file manager for Windows that makes browsing, searching and organizing files easier.",
     "homepage": "https://github.com/jimmgreen/pulse",
     "license": "Apache-2.0",
     "depends": "7zip",
-    "url": "https://github.com/jimmgreen/pulse/releases/download/v1.0.60/PulseSetup-1.0.60.exe",
-    "hash": "827aebcb14a9e4f4ec8281cf89e339cc887ec6f541ff6e80518ac463732c5234",
+    "url": "https://github.com/jimmgreen/pulse/releases/download/v1.0.62/PulseSetup-1.0.62.exe",
+    "hash": "951b5d2a88418965638189da08a2d8fb17e53fc5a5298f4be8e5e49ed1a9e117",
     "pre_install": [
         "$setup = (Get-Item \"$dir\\PulseSetup-*.exe\").FullName",
         "7z x -y \"-o$dir\\_ppkm\" \"$setup\" | Out-Null",
